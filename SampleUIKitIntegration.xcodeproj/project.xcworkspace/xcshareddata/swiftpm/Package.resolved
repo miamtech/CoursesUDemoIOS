@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "kmm-miam-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/miam/kmm-miam-sdk",
+      "state" : {
+        "branch" : "fix/swift-package",
+        "revision" : "270ba5e6280071a42b9ac69a90ef143669fd7cc3"
+      }
+    }
+  ],
+  "version" : 2
+}
