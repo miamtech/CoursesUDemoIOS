@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26552BC42A41E4F900238AC3 /* CoursesUIOSTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */; };
 		BF1A8021287D913400F8FF9A /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealViewController.swift */; };
 		BF1A8027287DC14400F8FF9A /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8026287DC14400F8FF9A /* DiscloseViewController.swift */; };
 		BF2AC98B28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC98A28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift */; };
@@ -19,10 +20,10 @@
 		BF85058428578EFA00651864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF85058328578EFA00651864 /* Assets.xcassets */; };
 		BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058528578EFA00651864 /* LaunchScreen.storyboard */; };
 		BF8505932857955600651864 /* HostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8505922857955600651864 /* HostingViewController.swift */; };
-		BFA597F62923A00E00706993 /* MiamIOSFramework in Frameworks */ = {isa = PBXBuildFile; productRef = BFA597F52923A00E00706993 /* MiamIOSFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUIOSTemplate; path = "../coursesU-iOS-templates/CoursesUIOSTemplate"; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		BF1A8026287DC14400F8FF9A /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
 		BF2AC98A28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuggestionTestViewController.swift; sourceTree = "<group>"; };
@@ -44,19 +45,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA597F62923A00E00706993 /* MiamIOSFramework in Frameworks */,
+				26552BC42A41E4F900238AC3 /* CoursesUIOSTemplate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26552BC22A41E4F900238AC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF85056E28578EF800651864 = {
 			isa = PBXGroup;
 			children = (
 				BF86E39D291D68D0001DF572 /* Packages */,
 				BF85057928578EF800651864 /* SampleUIKitIntegration */,
 				BF85057828578EF800651864 /* Products */,
+				26552BC22A41E4F900238AC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +100,7 @@
 		BF86E39D291D68D0001DF572 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -112,7 +122,7 @@
 			);
 			name = SampleUIKitIntegration;
 			packageProductDependencies = (
-				BFA597F52923A00E00706993 /* MiamIOSFramework */,
+				26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */,
 			);
 			productName = SampleUIKitIntegration;
 			productReference = BF85057728578EF800651864 /* SampleUIKitIntegration.app */;
@@ -143,7 +153,7 @@
 			);
 			mainGroup = BF85056E28578EF800651864;
 			packageReferences = (
-				BFA597F42923A00E00706993 /* XCRemoteSwiftPackageReference "kmm-miam-sdk" */,
+				26552BC12A41E43B00238AC3 /* XCRemoteSwiftPackageReference "CoursesUIOSTemplate" */,
 			);
 			productRefGroup = BF85057828578EF800651864 /* Products */;
 			projectDirPath = "";
@@ -327,7 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 38CGT7EPPY;
+				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -356,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 38CGT7EPPY;
+				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -402,21 +412,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BFA597F42923A00E00706993 /* XCRemoteSwiftPackageReference "kmm-miam-sdk" */ = {
+		26552BC12A41E43B00238AC3 /* XCRemoteSwiftPackageReference "CoursesUIOSTemplate" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitlab.com/miam/kmm-miam-sdk";
+			repositoryURL = "file:///Users/diarmuidmcgonagle/sources/miam/coursesU-iOS-templates/CoursesUIOSTemplate";
 			requirement = {
-				branch = "fix/swift-package";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BFA597F52923A00E00706993 /* MiamIOSFramework */ = {
+		26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BFA597F42923A00E00706993 /* XCRemoteSwiftPackageReference "kmm-miam-sdk" */;
-			productName = MiamIOSFramework;
+			package = 26552BC12A41E43B00238AC3 /* XCRemoteSwiftPackageReference "CoursesUIOSTemplate" */;
+			productName = CoursesUIOSTemplate;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

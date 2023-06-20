@@ -6,16 +6,17 @@
 //
 
 import UIKit
-import MiamIOSFramework
-import miamCore
 import SwiftUI
+import miamCore
+import MiamIOSFramework
+import CoursesUIOSTemplate
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        KoinKt.doInitKoin()
+//        KoinKt.doInitKoin()
         LogHandler.companion.info("Are you ready ? \(ContextHandlerInstance.shared.instance.isReady())")
         //basketHandler = BasketHandlerInstance.shared.instance
         //basketHandler.setListenToRetailerBasket(func: initBasketListener)
@@ -24,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        PointOfSaleHandler.shared.updateStoreId(storeId: "35290")
 //        PointOfSaleHandler.shared.setSupplierOrigin(origin:"www.coursesu.fr")
 //        PointOfSaleHandler.shared.setSupplier(supplierId: 7)
-        PointOfSaleHandler.shared.setSupplier(supplierId: 9)
-        PointOfSaleHandler.shared.setSupplierOrigin(origin: "www.franprix.fr-dev")
-        //PointOfSaleHandler.shared.isAvailable = false
-        UserHandler.shared.updateUserId(userId: "ed0a471a4bdc755664db84068119144b3a1772d8a6911057a0d6be6a3e075120")
+//        PointOfSaleHandler.shared.setSupplier(supplierId: 9)
+//        PointOfSaleHandler.shared.setSupplierOrigin(origin: "www.franprix.fr-dev")
+//        //PointOfSaleHandler.shared.isAvailable = false
+//        UserHandler.shared.updateUserId(userId: "ed0a471a4bdc755664db84068119144b3a1772d8a6911057a0d6be6a3e075120")
 //        Template.sharedInstance.recipeCardTemplate = { (recipeCardViewModel: RecipeCardVM,
 //                                                        look: @escaping () -> Void,
 //                                                        buy: @escaping () -> Void ) -> AnyView in
