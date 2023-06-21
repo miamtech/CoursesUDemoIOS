@@ -10,19 +10,19 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class MealPlannerViewController: UIHostingController<BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesURecipeCardFooter, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>> {
+class MealPlannerViewController: UIHostingController<BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>> {
     
     required init?(coder aDecoder: NSCoder) {
-        let budgetPlannerView = BudgetPlannerView.init(toolbarTemplate: CoursesUBudgetPlannerToolbar(), footerTemplate: CoursesURecipeCardFooter(), recipeCardTemplate: CoursesUBudgetRecipeCard(), loadingCardTemplate: CoursesUBudgetRecipeCardLoading(), placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(), recipes: ["123","32","232"], selectedRecipe: .constant("123"), showRecipe: {_ in}, validateRecipes: {}, replaceRecipe: {_ in})
+        let budgetPlannerView = BudgetPlannerView.init(toolbarTemplate: CoursesUBudgetPlannerToolbar(), footerTemplate: CoursesUBudgetPlannerFooter(), recipeCardTemplate: CoursesUBudgetRecipeCard(), loadingCardTemplate: CoursesUBudgetRecipeCardLoading(), placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(), recipes: ["123","32","232"], selectedRecipe: .constant("123"), showRecipe: {_ in}, validateRecipes: {}, replaceRecipe: {_ in})
         super.init(coder: aDecoder, rootView: budgetPlannerView)
     }
     
-    override init(rootView: BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesURecipeCardFooter, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>) {
+    override init(rootView: BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>) {
         super.init(rootView: rootView)
     }
     
     public init() {
-        let budgetPlannerView = BudgetPlannerView.init(toolbarTemplate: CoursesUBudgetPlannerToolbar(), footerTemplate: CoursesURecipeCardFooter(), recipeCardTemplate: CoursesUBudgetRecipeCard(), loadingCardTemplate: CoursesUBudgetRecipeCardLoading(), placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(), recipes: ["123","32","232"], selectedRecipe: .constant("123"), showRecipe: {_ in}, validateRecipes: {}, replaceRecipe: {_ in})
+        let budgetPlannerView = BudgetPlannerView.init(toolbarTemplate: CoursesUBudgetPlannerToolbar(), footerTemplate: CoursesUBudgetPlannerFooter(), recipeCardTemplate: CoursesUBudgetRecipeCard(), loadingCardTemplate: CoursesUBudgetRecipeCardLoading(), placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(), recipes: ["123","32","232"], selectedRecipe: .constant("123"), showRecipe: {_ in}, validateRecipes: {}, replaceRecipe: {_ in})
         super.init(rootView: budgetPlannerView)
     }
 
