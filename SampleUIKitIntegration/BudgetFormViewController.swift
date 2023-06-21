@@ -43,8 +43,10 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
         let budgetForm = BudgetFormView.init(
             budgetForm: CoursesUBudgetForm(maxOfMeals: .constant(4)),
             budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
-            onBudgetValidated: {_ in DispatchQueue.main.async {
-                self.navigationController?.pushViewController(MealPlannerViewController(), animated: true)}
+            onBudgetValidated: {_ in
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(MealPlannerViewController(), animated: true)
+                }
             }
         )
         self.rootView = budgetForm
