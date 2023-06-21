@@ -33,7 +33,11 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
             recipes: ["123","32","232"],
-            validateRecipes: {},
+            validateRecipes: {
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(BasketPreviewViewController(), animated: true)
+                }
+            },
             replaceRecipe: { _ in
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(ReplaceMealViewController(), animated: true)
