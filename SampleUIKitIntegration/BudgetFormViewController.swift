@@ -10,7 +10,7 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class MealViewController: UIHostingController<BudgetFormView<CoursesUBudgetForm>> {
+class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudgetForm>> {
     // Initialize our controller with RecipeCardView as a root view and show
     // recipe 1.
     required init?(coder aDecoder: NSCoder) {
