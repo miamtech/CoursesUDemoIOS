@@ -35,11 +35,11 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
           navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.topItem?.title = "Mon assistant Budget repas"
-        navigationController?.navigationBar.backItem?.title = "     "
     }
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+            self.title = "Mon assistant Budget repas"
         let budgetForm = BudgetFormView.init(
             budgetForm: CoursesUBudgetForm(maxOfMeals: .constant(4)),
             budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),

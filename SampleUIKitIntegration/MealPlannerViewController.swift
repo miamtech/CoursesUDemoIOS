@@ -27,6 +27,8 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
     }
 
     override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Mon assistant Budget repas"
         let budgetPlannerView = CoursesUBudgetPlannerView.init(
             toolbarTemplate: CoursesUBudgetPlannerToolbar(),
             recipeCardTemplate: CoursesUBudgetRecipeCard(),
@@ -44,15 +46,7 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
                 }
             })
         self.rootView = budgetPlannerView
-//        super.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.topItem?.title = "Mon assistant Budget repas"
-        navigationController?.navigationBar.backItem?.title = "     "
-    }
-    
 }
 
 //

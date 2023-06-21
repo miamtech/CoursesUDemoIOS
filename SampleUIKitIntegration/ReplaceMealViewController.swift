@@ -31,12 +31,13 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
     }
 
     override func viewDidLoad() {
-//        super.viewDidLoad()
+        super.viewDidLoad()
+        self.title = "Ajouter une idée repas"
         let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(
             searchTemplate: CoursesUBudgetSearch(),
             cardTemplate: CoursesURecipeCard(),
             stickyFooter: CoursesUBudgetPlannerFooter(),
-            onRecipeSelected: {_ in
+            onRecipeSelected: { _ in
                 // this should add Recipe back to VM?
                 DispatchQueue.main.async {
                     self.navigationController?.popViewController(animated: true)
@@ -44,5 +45,4 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
             })
         self.rootView = budgetRecipePicker
     }
-    
 }

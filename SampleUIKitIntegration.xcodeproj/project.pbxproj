@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D532A432F05005511D3 /* ReplaceMealViewController.swift */; };
 		26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */; };
+		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
 		26552BC42A41E4F900238AC3 /* CoursesUIOSTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */; };
 		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
 		BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		26311D532A432F05005511D3 /* ReplaceMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMealViewController.swift; sourceTree = "<group>"; };
 		26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPreviewViewController.swift; sourceTree = "<group>"; };
+		26311D572A434233005511D3 /* RecapPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapPurchaseViewController.swift; sourceTree = "<group>"; };
 		26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerViewController.swift; sourceTree = "<group>"; };
 		267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUIOSTemplate; path = "../coursesU-iOS-templates/CoursesUIOSTemplate"; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */,
 				26311D532A432F05005511D3 /* ReplaceMealViewController.swift */,
 				26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */,
+				26311D572A434233005511D3 /* RecapPurchaseViewController.swift */,
 			);
 			path = SampleUIKitIntegration;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				BF8505932857955600651864 /* HostingViewController.swift in Sources */,
 				BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */,
 				BF1A8027287DC14400F8FF9A /* DiscloseViewController.swift in Sources */,
+				26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
 				26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */,
 				BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */,

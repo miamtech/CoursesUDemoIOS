@@ -18,7 +18,7 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
     required init?(coder aDecoder: NSCoder) {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-            basketProduct: CoursesUMealPlannerBasketPreviewProduct())
+            basketProduct: CoursesUMealPlannerBasketPreviewProduct(), validateRecipes: {})
         super.init(coder: aDecoder, rootView: budgetPreview)
     }
     
@@ -29,25 +29,22 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
     public init() {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-            basketProduct: CoursesUMealPlannerBasketPreviewProduct())
+            basketProduct: CoursesUMealPlannerBasketPreviewProduct() ,validateRecipes: {})
         super.init(rootView: budgetPreview)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Mon assistant Budget repas"
+        let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
+            recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
+            basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
+            validateRecipes: {
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
+                }
+            })
+        self.rootView = budgetPreview
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
