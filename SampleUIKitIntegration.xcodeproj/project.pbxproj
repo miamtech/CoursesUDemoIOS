@@ -13,17 +13,11 @@
 		26552BC42A41E4F900238AC3 /* CoursesUIOSTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */; };
 		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
 		BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */; };
-		BF1A8027287DC14400F8FF9A /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8026287DC14400F8FF9A /* DiscloseViewController.swift */; };
-		BF2AC98B28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC98A28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift */; };
-		BF2AC99028F818AB000776A2 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2AC98F28F818AB000776A2 /* ProductTableViewCell.swift */; };
-		BF59A47F28D0DC0200882BA9 /* RecipeCardHostingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59A47E28D0DC0200882BA9 /* RecipeCardHostingTableViewCell.swift */; };
-		BF59A48228D0DF4500882BA9 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59A48128D0DF4500882BA9 /* RecipesTableViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
 		BF85058228578EF800651864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058028578EF800651864 /* Main.storyboard */; };
 		BF85058428578EFA00651864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF85058328578EFA00651864 /* Assets.xcassets */; };
 		BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058528578EFA00651864 /* LaunchScreen.storyboard */; };
-		BF8505932857955600651864 /* HostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8505922857955600651864 /* HostingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +27,6 @@
 		26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerViewController.swift; sourceTree = "<group>"; };
 		267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUIOSTemplate; path = "../coursesU-iOS-templates/CoursesUIOSTemplate"; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormViewController.swift; sourceTree = "<group>"; };
-		BF1A8026287DC14400F8FF9A /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
-		BF2AC98A28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuggestionTestViewController.swift; sourceTree = "<group>"; };
-		BF2AC98F28F818AB000776A2 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		BF59A47E28D0DC0200882BA9 /* RecipeCardHostingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardHostingTableViewCell.swift; sourceTree = "<group>"; };
-		BF59A48128D0DF4500882BA9 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF85057C28578EF800651864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +34,6 @@
 		BF85058328578EFA00651864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF85058628578EFA00651864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF85058828578EFA00651864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF8505922857955600651864 /* HostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +82,7 @@
 				BF85058328578EFA00651864 /* Assets.xcassets */,
 				BF85058528578EFA00651864 /* LaunchScreen.storyboard */,
 				BF85058828578EFA00651864 /* Info.plist */,
-				BF8505922857955600651864 /* HostingViewController.swift */,
 				BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */,
-				BF1A8026287DC14400F8FF9A /* DiscloseViewController.swift */,
-				BF59A47E28D0DC0200882BA9 /* RecipeCardHostingTableViewCell.swift */,
-				BF59A48128D0DF4500882BA9 /* RecipesTableViewController.swift */,
-				BF2AC98A28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift */,
-				BF2AC98F28F818AB000776A2 /* ProductTableViewCell.swift */,
 				26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */,
 				26311D532A432F05005511D3 /* ReplaceMealViewController.swift */,
 				26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */,
@@ -194,15 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF59A47F28D0DC0200882BA9 /* RecipeCardHostingTableViewCell.swift in Sources */,
 				26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */,
-				BF59A48228D0DF4500882BA9 /* RecipesTableViewController.swift in Sources */,
-				BF2AC99028F818AB000776A2 /* ProductTableViewCell.swift in Sources */,
-				BF2AC98B28F6D1B1000776A2 /* RecipeSuggestionTestViewController.swift in Sources */,
 				26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */,
-				BF8505932857955600651864 /* HostingViewController.swift in Sources */,
 				BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */,
-				BF1A8027287DC14400F8FF9A /* DiscloseViewController.swift in Sources */,
 				26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
 				26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */,
