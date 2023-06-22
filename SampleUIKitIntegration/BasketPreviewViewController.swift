@@ -12,24 +12,34 @@ import CoursesUIOSTemplate
 
 class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
     CoursesUMealPlannerBasketPreviewRecipeOverview,
-    CoursesUMealPlannerBasketPreviewProduct>
+    CoursesUMealPlannerBasketPreviewProduct,
+    CoursesUMealPlannerBasketPreviewSectionTitle,
+    CoursesUMealPlannerBasketPreviewSectionProduct>
 > {
     
     required init?(coder aDecoder: NSCoder) {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-            basketProduct: CoursesUMealPlannerBasketPreviewProduct(), validateRecipes: {})
+            basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
+            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
+            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(), validateRecipes: {})
         super.init(coder: aDecoder, rootView: budgetPreview)
     }
     
-    override init(rootView: CoursesUMealPlannerBasketPreviewView<CoursesUMealPlannerBasketPreviewRecipeOverview, CoursesUMealPlannerBasketPreviewProduct>) {
+    override init(rootView: CoursesUMealPlannerBasketPreviewView<
+                  CoursesUMealPlannerBasketPreviewRecipeOverview,
+                  CoursesUMealPlannerBasketPreviewProduct,
+                  CoursesUMealPlannerBasketPreviewSectionTitle,
+                  CoursesUMealPlannerBasketPreviewSectionProduct>) {
         super.init(rootView: rootView)
     }
     
     public init() {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-            basketProduct: CoursesUMealPlannerBasketPreviewProduct() ,validateRecipes: {})
+            basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
+            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
+            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),validateRecipes: {})
         super.init(rootView: budgetPreview)
     }
 
@@ -39,6 +49,8 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
             basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
+            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
+            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
             validateRecipes: {
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)

@@ -15,7 +15,7 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
     // recipe 1.
     required init?(coder aDecoder: NSCoder) {
         let budgetForm = BudgetFormView.init(
-            budgetForm: CoursesUBudgetForm(maxOfMeals: .constant(4)),
+            budgetForm: CoursesUBudgetForm(maxOfMeals: .constant(10)),
             budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
             onBudgetValidated: {_ in print("this will nav")}
         )
