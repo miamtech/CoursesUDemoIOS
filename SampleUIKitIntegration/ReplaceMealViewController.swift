@@ -17,7 +17,7 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
 > {
     
     required init?(coder aDecoder: NSCoder) {
-        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), onRecipeSelected: {_ in})
+        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), maxBudget: 35.0, onRecipeSelected: {_ in})
         super.init(coder: aDecoder, rootView: budgetRecipePicker)
     }
     
@@ -26,7 +26,7 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
     }
     
     public init() {
-        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), onRecipeSelected: {_ in})
+        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), maxBudget: 35.0, onRecipeSelected: {_ in})
         super.init(rootView: budgetRecipePicker)
     }
 
@@ -37,6 +37,7 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
             searchTemplate: CoursesUBudgetSearch(),
             cardTemplate: CoursesURecipeCard(),
             stickyFooter: CoursesUBudgetPlannerFooter(),
+            maxBudget: 35.0,
             onRecipeSelected: { _ in
                 // this should add Recipe back to VM?
                 DispatchQueue.main.async {
