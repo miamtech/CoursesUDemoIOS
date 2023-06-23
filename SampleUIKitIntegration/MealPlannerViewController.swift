@@ -22,6 +22,7 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
             recipes: ["123","32","232"],
+            showRecipe: {_ in },
             validateRecipes: {},
             replaceRecipe: {_ in})
         super.init(coder: aDecoder, rootView: budgetPlannerView)
@@ -41,6 +42,7 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
             recipes: ["123","32","232"],
+            showRecipe: {_ in },
             validateRecipes: {},
             replaceRecipe: {_ in })
         super.init(rootView: budgetPlannerView)
@@ -58,6 +60,7 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
             recipes: ["123","32","232"],
+            showRecipe: {_ in },
             validateRecipes: {
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(BasketPreviewViewController(), animated: true)
