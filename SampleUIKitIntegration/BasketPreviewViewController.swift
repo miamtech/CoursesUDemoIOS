@@ -11,6 +11,7 @@ import MiamIOSFramework
 import CoursesUIOSTemplate
 
 class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
+CoursesUMealPlannerBasketPreviewLoading,
     CoursesUMealPlannerBasketPreviewRecipeOverview,
     CoursesUMealPlannerBasketPreviewProduct,
     CoursesUMealPlannerBasketPreviewSectionTitle,
@@ -19,6 +20,7 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
     
     required init?(coder aDecoder: NSCoder) {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
+            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
             basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
@@ -27,6 +29,7 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
     }
     
     override init(rootView: CoursesUMealPlannerBasketPreviewView<
+                  CoursesUMealPlannerBasketPreviewLoading,
                   CoursesUMealPlannerBasketPreviewRecipeOverview,
                   CoursesUMealPlannerBasketPreviewProduct,
                   CoursesUMealPlannerBasketPreviewSectionTitle,
@@ -36,6 +39,7 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
     
     public init() {
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
+            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
             basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
@@ -47,6 +51,7 @@ class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasket
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
+            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
             recipeOverview: CoursesUMealPlannerBasketPreviewRecipeOverview(),
             basketProduct: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
