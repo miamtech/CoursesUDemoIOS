@@ -11,8 +11,8 @@ import MiamIOSFramework
 import CoursesUIOSTemplate
 
 class RecapPurchaseViewController: UIHostingController<BudgetRecapView<CoursesURecapView>> {
-    
-    
+
+
     required init?(coder aDecoder: NSCoder) {
         let recapPurchase = BudgetRecapView.init(
             template: CoursesURecapView(),
@@ -20,11 +20,11 @@ class RecapPurchaseViewController: UIHostingController<BudgetRecapView<CoursesUR
         )
         super.init(coder: aDecoder, rootView: recapPurchase)
     }
-    
+
     override init(rootView: BudgetRecapView<CoursesURecapView>) {
         super.init(rootView: rootView)
     }
-    
+
     public init() {
         let recapPurchase = BudgetRecapView.init(
             template: CoursesURecapView(),
