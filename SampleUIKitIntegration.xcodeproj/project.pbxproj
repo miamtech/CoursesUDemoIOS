@@ -12,6 +12,7 @@
 		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
 		26552BC42A41E4F900238AC3 /* CoursesUIOSTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 26552BC32A41E4F900238AC3 /* CoursesUIOSTemplate */; };
 		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
+		2672FEC92A498A1700D59745 /* CustomUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEC82A498A1700D59745 /* CustomUIHostingController.swift */; };
 		BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPreviewViewController.swift; sourceTree = "<group>"; };
 		26311D572A434233005511D3 /* RecapPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapPurchaseViewController.swift; sourceTree = "<group>"; };
 		26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerViewController.swift; sourceTree = "<group>"; };
+		2672FEC82A498A1700D59745 /* CustomUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIHostingController.swift; sourceTree = "<group>"; };
 		267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUIOSTemplate; path = "../coursesU-iOS-templates/CoursesUIOSTemplate"; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormViewController.swift; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				26311D532A432F05005511D3 /* ReplaceMealViewController.swift */,
 				26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */,
 				26311D572A434233005511D3 /* RecapPurchaseViewController.swift */,
+				2672FEC82A498A1700D59745 /* CustomUIHostingController.swift */,
 			);
 			path = SampleUIKitIntegration;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */,
 				26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
+				2672FEC92A498A1700D59745 /* CustomUIHostingController.swift in Sources */,
 				26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */,
 				BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */,
 			);

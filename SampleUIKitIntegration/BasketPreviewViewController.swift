@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
-
+//
 class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
 CoursesUMealPlannerBasketPreviewLoading,
     CoursesUMealPlannerBasketPreviewRecipeOverview,
@@ -19,13 +19,7 @@ CoursesUMealPlannerBasketPreviewLoading,
 > {
 
     required init?(coder aDecoder: NSCoder) {
-        let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
-            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
-            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
-            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(), validateRecipes: {})
-        super.init(coder: aDecoder, rootView: budgetPreview)
+        super.init(coder: aDecoder)
     }
 
     override init(rootView: CoursesUMealPlannerBasketPreviewView<
@@ -63,11 +57,13 @@ CoursesUMealPlannerBasketPreviewLoading,
             })
         self.rootView = budgetPreview
         // Do any additional setup after loading the view.
+
+
     }
 }
 //
 //
-//class BasketPreviewViewController: UIHostingController<MealPlannerBasketPreviewView<
+//class BasketPreviewViewController: CustomUIHostingController<MealPlannerBasketPreviewView<
 //CoursesUMealPlannerBasketPreviewLoading,
 //    CoursesUMealPlannerBasketPreviewRecipeOverview,
 //    CoursesUMealPlannerBasketPreviewProduct,
@@ -76,26 +72,8 @@ CoursesUMealPlannerBasketPreviewLoading,
 //> {
 //
 //    required init?(coder aDecoder: NSCoder) {
-//        let budgetPreview = MealPlannerBasketPreviewView.init(
-//            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
-//            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-//            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
-//            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct()
-////            ,
-////            validateRecipes: {}
-//        )
-//        super.init(coder: aDecoder, rootView: budgetPreview)
-//    }
-//
-//    override init(rootView: MealPlannerBasketPreviewView<
-//                  CoursesUMealPlannerBasketPreviewLoading,
-//                  CoursesUMealPlannerBasketPreviewRecipeOverview,
-//                  CoursesUMealPlannerBasketPreviewProduct,
-//                  CoursesUMealPlannerBasketPreviewSectionTitle,
-//                  CoursesUMealPlannerBasketPreviewSectionProduct>) {
-//        super.init(rootView: rootView)
-//    }
+//            super.init(coder: aDecoder)
+//        }
 //
 //    public init() {
 //        let budgetPreview = MealPlannerBasketPreviewView.init(
@@ -118,13 +96,16 @@ CoursesUMealPlannerBasketPreviewLoading,
 //            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
 //            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
 //            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct()
-////            validateRecipes: {
-////                DispatchQueue.main.async {
-////                    self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
-////                }
-////            }
+//            //            validateRecipes: {
+//            //                DispatchQueue.main.async {
+//            //                    self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
+//            //                }
+//            //            }
 //        )
 //        self.rootView = budgetPreview
 //        // Do any additional setup after loading the view.
+//        // Set the background color
+//        self.view.backgroundColor = UIColor(red: 191.0 / 255, green: 221.0 / 255, blue: 232.0/255, alpha: 1.0)
 //    }
+//
 //}
