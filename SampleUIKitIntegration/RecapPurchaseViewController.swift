@@ -10,27 +10,36 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class RecapPurchaseViewController: UIHostingController<CoursesUFinalBudgetCallToAction> {
+class RecapPurchaseViewController: UIHostingController<BudgetRecapView<CoursesURecapView>> {
     
     
     required init?(coder aDecoder: NSCoder) {
-        let recapPurchase = CoursesUFinalBudgetCallToAction(buttonAction: {})
+        let recapPurchase = BudgetRecapView.init(
+            template: CoursesURecapView(),
+            onTapGesture: {}
+        )
         super.init(coder: aDecoder, rootView: recapPurchase)
     }
     
-    override init(rootView: CoursesUFinalBudgetCallToAction) {
+    override init(rootView: BudgetRecapView<CoursesURecapView>) {
         super.init(rootView: rootView)
     }
     
     public init() {
-        let recapPurchase = CoursesUFinalBudgetCallToAction(buttonAction: {})
+        let recapPurchase = BudgetRecapView.init(
+            template: CoursesURecapView(),
+            onTapGesture: {}
+        )
         super.init(rootView: recapPurchase)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
-        let recapPurchase = CoursesUFinalBudgetCallToAction(buttonAction: {})
+        let recapPurchase = BudgetRecapView.init(
+            template: CoursesURecapView(),
+            onTapGesture: {}
+        )
         self.rootView = recapPurchase
         // Do any additional setup after loading the view.
     }
