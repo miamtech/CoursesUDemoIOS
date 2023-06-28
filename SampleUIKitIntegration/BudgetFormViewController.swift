@@ -13,13 +13,30 @@ import CoursesUIOSTemplate
 class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudgetForm>> {
     // Initialize our controller with RecipeCardView as a root view and show
     // recipe 1.
+//    required init?(coder aDecoder: NSCoder) {
+//        let budgetForm = BudgetFormView.init(
+//            budgetForm: CoursesUBudgetForm(),
+//            budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
+//            onBudgetValidated: {_ in print("this will nav")}
+//        )
+//        super.init(coder: aDecoder, rootView: budgetForm)
+//    }
+    
     required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+        }
+
+    override init(rootView: BudgetFormView<CoursesUBudgetForm>) {
+        super.init(rootView: rootView)
+    }
+    
+    public init() {
         let budgetForm = BudgetFormView.init(
-            budgetForm: CoursesUBudgetForm(),
-            budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
-            onBudgetValidated: {_ in print("this will nav")}
-        )
-        super.init(coder: aDecoder, rootView: budgetForm)
+                    budgetForm: CoursesUBudgetForm(),
+                    budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
+                    onBudgetValidated: {_ in print("this will nav")}
+                )
+                super.init(rootView: budgetForm)
     }
 
     override func viewWillAppear(_ animated: Bool) {

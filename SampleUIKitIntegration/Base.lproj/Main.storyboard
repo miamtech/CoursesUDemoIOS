@@ -74,6 +74,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="juC-UB-nml"/>
+                    <connections>
+                        <outlet property="actionButton" destination="CHj-sV-yZB" id="aS1-iO-wpa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEI-YI-dhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

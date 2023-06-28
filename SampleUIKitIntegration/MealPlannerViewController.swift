@@ -12,22 +12,6 @@ import CoursesUIOSTemplate
 
 class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>> {
 
-//    required init?(coder aDecoder: NSCoder) {
-//        let budgetPlannerView = CoursesUBudgetPlannerView.init(
-//            toolbarTemplate: CoursesUBudgetPlannerToolbar(),
-//            footerTemplate: CoursesUBudgetPlannerFooter(),
-//            loadingTemplate: MiamBudgetPlannerLoading(),
-//            emptyTemplate: MiamBudgetPlannerEmpty(),
-//            recipeCardTemplate: CoursesUBudgetRecipeCard(),
-//            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
-//            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-//            recipes: ["123","32","232"],
-//            showRecipe: {_ in },
-//            validateRecipes: {},
-//            replaceRecipe: {_ in})
-//        super.init(coder: aDecoder, rootView: budgetPlannerView)
-//    }
-    
     required init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
         }
