@@ -29,7 +29,6 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             recipeCardTemplate: CoursesUBudgetRecipeCard(),
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-            recipes: ["123","32","232"],
             showRecipe: {_ in },
             validateRecipes: {},
             replaceRecipe: {_ in })
@@ -47,7 +46,6 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
             recipeCardTemplate: CoursesUBudgetRecipeCard(),
             loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
             placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-            recipes: ["123","32","232"],
             showRecipe: {_ in },
             validateRecipes: {
                 DispatchQueue.main.async {
@@ -75,7 +73,6 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
 //            recipeCardTemplate: CoursesUBudgetRecipeCard(),
 //            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
 //            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-//            recipes: ["123","32","232"],
 //            selectedRecipe: .constant("123"),
 //            showRecipe: {_ in},
 //            validateRecipes: {},
@@ -96,7 +93,6 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
 //            recipeCardTemplate: CoursesUBudgetRecipeCard(),
 //            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
 //            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-//            recipes: ["123","32","232"],
 //            selectedRecipe: .constant("123"),
 //            showRecipe: {_ in},
 //            validateRecipes: {},

@@ -32,7 +32,7 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
     
     public init() {
         let budgetForm = BudgetFormView.init(
-                    budgetForm: CoursesUBudgetForm(),
+            budgetForm: CoursesUBudgetForm(includeTitle: true),
                     budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
                     onBudgetValidated: {_ in print("this will nav")}
                 )
