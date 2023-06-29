@@ -9,47 +9,11 @@ import UIKit
 import SwiftUI
 //import MiamIOSFramework
 import CoursesUIOSTemplate
-//
-//class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipePickerView<
-//        CoursesUBudgetSearch,
-//        CoursesURecipeCard,
-//        CoursesUBudgetPlannerFooter>
-//> {
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), maxBudget: 35.0, onRecipeSelected: {_ in})
-//        super.init(coder: aDecoder, rootView: budgetRecipePicker)
-//    }
-//
-//    override init(rootView: CoursesUBudgetPlannerRecipePickerView<CoursesUBudgetSearch, CoursesURecipeCard, CoursesUBudgetPlannerFooter>) {
-//        super.init(rootView: rootView)
-//    }
-//
-//    public init() {
-//        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(searchTemplate: CoursesUBudgetSearch(), cardTemplate: CoursesURecipeCard(), stickyFooter: CoursesUBudgetPlannerFooter(), maxBudget: 35.0, onRecipeSelected: {_ in})
-//        super.init(rootView: budgetRecipePicker)
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.title = "Ajouter une idée repas"
-//        let budgetRecipePicker = CoursesUBudgetPlannerRecipePickerView.init(
-//            searchTemplate: CoursesUBudgetSearch(),
-//            cardTemplate: CoursesURecipeCard(),
-//            stickyFooter: CoursesUBudgetPlannerFooter(),
-//            maxBudget: 35.0,
-//            onRecipeSelected: { _ in
-//                DispatchQueue.main.async {
-//                    self.navigationController?.popViewController(animated: true)
-//                }
-//            })
-//        self.rootView = budgetRecipePicker
-//    }
-//}
+
 class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipePickerView<
-        CoursesUBudgetSearch,
+        CoursesUMealPlannerSearch,
         CoursesURecipeCard,
-        CoursesUBudgetPlannerFooter>
+        CoursesUMealPlannerFooter>
 > {
 
     var onRecipeSelectedAction: ((String) -> Void)?
@@ -60,7 +24,7 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
         setupRecipeSelectedAction()
     }
 
-    override init(rootView: CoursesUBudgetPlannerRecipePickerView<CoursesUBudgetSearch, CoursesURecipeCard, CoursesUBudgetPlannerFooter>) {
+    override init(rootView: CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard, CoursesUMealPlannerFooter>) {
         super.init(rootView: ReplaceMealViewController.createRootView())
         setupRecipeSelectedAction()
     }
@@ -76,11 +40,11 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
         self.rootView = ReplaceMealViewController.createRootView(onRecipeSelected: onRecipeSelectedAction)
     }
 
-    private static func createRootView(onRecipeSelected: ((String) -> Void)? = nil) -> CoursesUBudgetPlannerRecipePickerView<CoursesUBudgetSearch, CoursesURecipeCard, CoursesUBudgetPlannerFooter> {
+    private static func createRootView(onRecipeSelected: ((String) -> Void)? = nil) -> CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard, CoursesUMealPlannerFooter> {
         return CoursesUBudgetPlannerRecipePickerView(
-            searchTemplate: CoursesUBudgetSearch(),
+            searchTemplate: CoursesUMealPlannerSearch(),
             cardTemplate: CoursesURecipeCard(),
-            stickyFooter: CoursesUBudgetPlannerFooter(),
+            stickyFooter: CoursesUMealPlannerFooter(),
             maxBudget: 35.0,
             onRecipeSelected: onRecipeSelected ?? { _ in }
         )

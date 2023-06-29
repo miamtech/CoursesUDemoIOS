@@ -10,42 +10,42 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>> {
+class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerView<CoursesUMealPlannerToolbar, CoursesUMealPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUMealPlannerRecipeCard, CoursesUMealPlannerRecipeCardLoading, CoursesUMealPlannerRecipePlaceholder>> {
 
     required init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
         }
 
-    override init(rootView: CoursesUBudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>) {
+    override init(rootView: CoursesUMealPlannerPlannerView<CoursesUMealPlannerToolbar, CoursesUMealPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUMealPlannerRecipeCard, CoursesUMealPlannerRecipeCardLoading, CoursesUMealPlannerRecipePlaceholder>) {
         super.init(rootView: rootView)
     }
 
     public init() {
-        let budgetPlannerView = CoursesUBudgetPlannerView.init(
-            toolbarTemplate: CoursesUBudgetPlannerToolbar(),
-            footerTemplate: CoursesUBudgetPlannerFooter(),
+        let mealPlannerView = CoursesUMealPlannerPlannerView.init(
+            toolbarTemplate: CoursesUMealPlannerToolbar(),
+            footerTemplate: CoursesUMealPlannerFooter(),
             loadingTemplate: MiamBudgetPlannerLoading(),
             emptyTemplate: MiamBudgetPlannerEmpty(),
-            recipeCardTemplate: CoursesUBudgetRecipeCard(),
-            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
-            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
+            recipeCardTemplate: CoursesUMealPlannerRecipeCard(),
+            loadingCardTemplate: CoursesUMealPlannerRecipeCardLoading(),
+            placeholderCardTemplate: CoursesUMealPlannerRecipePlaceholder(),
             showRecipe: {_ in },
             validateRecipes: {},
             replaceRecipe: {_ in })
-        super.init(rootView: budgetPlannerView)
+        super.init(rootView: mealPlannerView)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
-        let budgetPlannerView = CoursesUBudgetPlannerView.init(
-            toolbarTemplate: CoursesUBudgetPlannerToolbar(),
-            footerTemplate: CoursesUBudgetPlannerFooter(),
+        let mealPlannerView = CoursesUMealPlannerPlannerView.init(
+            toolbarTemplate: CoursesUMealPlannerToolbar(),
+            footerTemplate: CoursesUMealPlannerFooter(),
             loadingTemplate: MiamBudgetPlannerLoading(),
             emptyTemplate: MiamBudgetPlannerEmpty(),
-            recipeCardTemplate: CoursesUBudgetRecipeCard(),
-            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
-            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
+            recipeCardTemplate: CoursesUMealPlannerRecipeCard(),
+            loadingCardTemplate: CoursesUMealPlannerRecipeCardLoading(),
+            placeholderCardTemplate: CoursesUMealPlannerRecipePlaceholder(),
             showRecipe: {_ in },
             validateRecipes: {
                 DispatchQueue.main.async {
@@ -57,7 +57,7 @@ class MealPlannerViewController: UIHostingController<CoursesUBudgetPlannerView<C
                     self.navigationController?.pushViewController(ReplaceMealViewController(), animated: true)
                 }
             })
-        self.rootView = budgetPlannerView
+        self.rootView = mealPlannerView
     }
 }
 //

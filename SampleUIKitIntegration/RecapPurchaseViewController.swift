@@ -10,24 +10,24 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class RecapPurchaseViewController: UIHostingController<BudgetRecapView<CoursesURecapView>> {
+class RecapPurchaseViewController: UIHostingController<MealPlannerRecapView<CoursesUMealPlannerRecapView>> {
 
 
     required init?(coder aDecoder: NSCoder) {
-        let recapPurchase = BudgetRecapView.init(
-            template: CoursesURecapView(),
+        let recapPurchase = MealPlannerRecapView.init(
+            template: CoursesUMealPlannerRecapView(),
             onTapGesture: {}
         )
         super.init(coder: aDecoder, rootView: recapPurchase)
     }
 
-    override init(rootView: BudgetRecapView<CoursesURecapView>) {
+    override init(rootView: MealPlannerRecapView<CoursesUMealPlannerRecapView>) {
         super.init(rootView: rootView)
     }
 
     public init() {
-        let recapPurchase = BudgetRecapView.init(
-            template: CoursesURecapView(),
+        let recapPurchase = MealPlannerRecapView.init(
+            template: CoursesUMealPlannerRecapView(),
             onTapGesture: {}
         )
         super.init(rootView: recapPurchase)
@@ -36,8 +36,8 @@ class RecapPurchaseViewController: UIHostingController<BudgetRecapView<CoursesUR
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
-        let recapPurchase = BudgetRecapView.init(
-            template: CoursesURecapView(),
+        let recapPurchase = MealPlannerRecapView.init(
+            template: CoursesUMealPlannerRecapView(),
             onTapGesture: {}
         )
         self.rootView = recapPurchase

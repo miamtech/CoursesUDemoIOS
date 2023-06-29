@@ -10,7 +10,7 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
 
-class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudgetForm>> {
+class MealPlannerFormViewController: UIHostingController<MealPlannerFormView<CoursesUMealPlannerForm>> {
     // Initialize our controller with RecipeCardView as a root view and show
     // recipe 1.
 //    required init?(coder aDecoder: NSCoder) {
@@ -26,13 +26,13 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
             super.init(coder: aDecoder)
         }
 
-    override init(rootView: BudgetFormView<CoursesUBudgetForm>) {
+    override init(rootView: MealPlannerFormView<CoursesUMealPlannerForm>) {
         super.init(rootView: rootView)
     }
     
     public init() {
-        let budgetForm = BudgetFormView.init(
-            budgetForm: CoursesUBudgetForm(includeTitle: true),
+        let budgetForm = MealPlannerFormView.init(
+            budgetForm: CoursesUMealPlannerForm(includeTitle: true),
                     budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
                     onBudgetValidated: {_ in print("this will nav")}
                 )
@@ -57,8 +57,8 @@ class BudgetFormViewController: UIHostingController<BudgetFormView<CoursesUBudge
     override func viewDidLoad() {
         super.viewDidLoad()
             self.title = "Mon assistant Budget repas"
-        let budgetForm = BudgetFormView.init(
-            budgetForm: CoursesUBudgetForm(),
+        let budgetForm = MealPlannerFormView.init(
+            budgetForm: CoursesUMealPlannerForm(),
             budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
             onBudgetValidated: {_ in
                 DispatchQueue.main.async {

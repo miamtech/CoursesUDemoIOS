@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import MiamIOSFramework
 import CoursesUIOSTemplate
-
+//
 class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
 CoursesUMealPlannerBasketPreviewLoading,
     CoursesUMealPlannerBasketPreviewRecipeOverview,
@@ -62,11 +62,12 @@ CoursesUMealPlannerBasketPreviewLoading,
     }
 }
 ////
-//
+
 //class BasketPreviewViewController: CustomUIHostingController<MealPlannerBasketPreviewView<
 //CoursesUMealPlannerBasketPreviewLoading,
 //    CoursesUMealPlannerBasketPreviewRecipeOverview,
 //    CoursesUMealPlannerBasketPreviewProduct,
+//    MiamMealPlannerBasketPreviewFooter,
 //    CoursesUMealPlannerBasketPreviewSectionTitle,
 //    CoursesUMealPlannerBasketPreviewSectionProduct>
 //> {
@@ -80,8 +81,11 @@ CoursesUMealPlannerBasketPreviewLoading,
 //            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
 //            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
 //            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
+//            footerTemplate: MiamMealPlannerBasketPreviewFooter(),
 //            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct()
+//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
+//            continueShopping: {},
+//            showBasket: {}
 ////            validateRecipes: {}
 //        )
 //        super.init(rootView: budgetPreview)
@@ -94,8 +98,11 @@ CoursesUMealPlannerBasketPreviewLoading,
 //            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
 //            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
 //            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
+//            footerTemplate: MiamMealPlannerBasketPreviewFooter(),
 //            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct()
+//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
+//            continueShopping: {},
+//            showBasket: {}
 //            //            validateRecipes: {
 //            //                DispatchQueue.main.async {
 //            //                    self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)

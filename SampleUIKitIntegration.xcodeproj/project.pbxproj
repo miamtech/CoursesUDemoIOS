@@ -19,7 +19,7 @@
 		2672FED22A49C54200D59745 /* RecipeSuggestionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED12A49C54200D59745 /* RecipeSuggestionTestViewController.swift */; };
 		2672FED42A49C56000D59745 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED32A49C56000D59745 /* RecipesTableViewController.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
-		BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */; };
+		BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
 		BF85058228578EF800651864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058028578EF800651864 /* Main.storyboard */; };
@@ -40,7 +40,7 @@
 		2672FED32A49C56000D59745 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
 		267817AD2A41DA9C00F209D7 /* CoursesUIOSTemplate */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUIOSTemplate; path = "../coursesU-iOS-templates/CoursesUIOSTemplate"; sourceTree = "<group>"; };
-		BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormViewController.swift; sourceTree = "<group>"; };
+		BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerFormViewController.swift; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF85057C28578EF800651864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				BF85058328578EFA00651864 /* Assets.xcassets */,
 				BF85058528578EFA00651864 /* LaunchScreen.storyboard */,
 				BF85058828578EFA00651864 /* Info.plist */,
-				BF1A8020287D913400F8FF9A /* BudgetFormViewController.swift */,
+				BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */,
 				26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */,
 				26311D532A432F05005511D3 /* ReplaceMealViewController.swift */,
 				26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */,
@@ -200,7 +200,7 @@
 				2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */,
 				26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */,
 				26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */,
-				BF1A8021287D913400F8FF9A /* BudgetFormViewController.swift in Sources */,
+				BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */,
 				2672FED42A49C56000D59745 /* RecipesTableViewController.swift in Sources */,
 				26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
