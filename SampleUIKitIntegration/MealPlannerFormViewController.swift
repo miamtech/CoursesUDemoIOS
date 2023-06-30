@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 import MiamIOSFramework
-import CoursesUIOSTemplate
+import CoursesUxMiamFramework
 
 class MealPlannerFormViewController: UIHostingController<MealPlannerFormView<CoursesUMealPlannerForm>> {
     // Initialize our controller with RecipeCardView as a root view and show

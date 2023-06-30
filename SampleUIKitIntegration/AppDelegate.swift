@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import miamCore
 import MiamIOSFramework
-import CoursesUIOSTemplate
+import CoursesUxMiamFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

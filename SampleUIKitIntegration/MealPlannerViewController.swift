@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 import MiamIOSFramework
-import CoursesUIOSTemplate
+import CoursesUxMiamFramework
 
 class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerView<CoursesUMealPlannerToolbar, CoursesUMealPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUMealPlannerRecipeCard, CoursesUMealPlannerRecipeCardLoading, CoursesUMealPlannerRecipePlaceholder>> {
 
