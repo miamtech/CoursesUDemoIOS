@@ -7,7 +7,7 @@
 
 import UIKit
 import MiamIOSFramework
-import CoursesUIOSTemplate
+import CoursesUxMiamFramework
 import SwiftUI
 
 class DiscloseViewController: UIViewController {
