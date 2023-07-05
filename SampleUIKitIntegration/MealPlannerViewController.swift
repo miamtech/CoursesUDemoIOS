@@ -58,6 +58,8 @@ class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerV
                 }
             })
         self.rootView = mealPlannerView
+        
+        
     }
 }
 //
