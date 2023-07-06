@@ -11,9 +11,9 @@ import SwiftUI
 import CoursesUxMiamFramework
 
 
-// This view Controller is implemented because when I was popping the view off, it was always firing twice.
+// This view Controller is implemented in a static manner because when I was popping the view off, it was always firing twice.
 // My experience in UIKit is not great, so this is the solution I found that worked. You will probably have a better way
-// to handle this 
+// to handle this
 class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipePickerView<
         CoursesUMealPlannerSearch,
         CoursesURecipeCard,
