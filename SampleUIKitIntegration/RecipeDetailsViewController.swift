@@ -46,7 +46,7 @@ class RecipeDetailsViewController: UIHostingController<
 
              override func viewDidLoad() {
                  let recipeId = UserDefaults.standard.value(forKey: "miam_mealplanner_recipeId") as? String ?? ""
-
+                 self.title = "Catalogue"
                  super.viewDidLoad()
                  let itemSelector = RecipeDetailsViewTemplate.init(
                     headerContent: CoursesURecipeDetailsHeaderView(),
