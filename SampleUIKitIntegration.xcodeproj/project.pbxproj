@@ -11,6 +11,7 @@
 		26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */; };
 		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
 		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
+		266EA7252A56CDC1005F808D /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */; };
 		2672FEC92A498A1700D59745 /* CustomUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEC82A498A1700D59745 /* CustomUIHostingController.swift */; };
 		2672FECC2A49C22900D59745 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECB2A49C22900D59745 /* MealViewController.swift */; };
 		2672FECE2A49C4E500D59745 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECD2A49C4E500D59745 /* ProductTableViewCell.swift */; };
@@ -111,6 +112,7 @@
 				2672FED32A49C56000D59745 /* RecipesTableViewController.swift */,
 				2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */,
 				26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */,
+				266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */,
 			);
 			path = SampleUIKitIntegration;
 			sourceTree = "<group>";
@@ -203,6 +205,7 @@
 				2672FEC92A498A1700D59745 /* CustomUIHostingController.swift in Sources */,
 				2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */,
 				26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */,
+				266EA7252A56CDC1005F808D /* RecipeDetailsViewController.swift in Sources */,
 				2672FECE2A49C4E500D59745 /* ProductTableViewCell.swift in Sources */,
 				BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */,
 				2672FED22A49C54200D59745 /* RecipeSuggestionTestViewController.swift in Sources */,
