@@ -19,8 +19,8 @@
 		2672FED22A49C54200D59745 /* RecipeSuggestionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED12A49C54200D59745 /* RecipeSuggestionTestViewController.swift */; };
 		2672FED42A49C56000D59745 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED32A49C56000D59745 /* RecipesTableViewController.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
-		26BE7E6D2A5C048B00F5F6FE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6C2A5C048B00F5F6FE /* Podfile */; };
 		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
+		26BE7E742A5C1C5500F5F6FE /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */; };
 		26E431DB2A543992002A9DAE /* ItemSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */; };
 		BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
@@ -28,7 +28,6 @@
 		BF85058228578EF800651864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058028578EF800651864 /* Main.storyboard */; };
 		BF85058428578EFA00651864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF85058328578EFA00651864 /* Assets.xcassets */; };
 		BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058528578EFA00651864 /* LaunchScreen.storyboard */; };
-		CE1028A54E37B054A08D8073 /* Pods_SampleUIKitIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF379CDCDD7138D503CB5173 /* Pods_SampleUIKitIntegration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,11 +43,9 @@
 		2672FED12A49C54200D59745 /* RecipeSuggestionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuggestionTestViewController.swift; sourceTree = "<group>"; };
 		2672FED32A49C56000D59745 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
-		26BE7E6C2A5C048B00F5F6FE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		26BE7E712A5C1C4B00F5F6FE /* CoursesUxMiamFramework */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUxMiamFramework; path = "../coursesU-iOS-templates/CoursesUxMiamFramework"; sourceTree = "<group>"; };
 		26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectorViewController.swift; sourceTree = "<group>"; };
-		4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUIKitIntegration.release.xcconfig"; path = "Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		5A3A838777FCA4C1374E5C99 /* Pods-SampleUIKitIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUIKitIntegration.debug.xcconfig"; path = "Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerFormViewController.swift; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +54,6 @@
 		BF85058328578EFA00651864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF85058628578EFA00651864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF85058828578EFA00651864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF379CDCDD7138D503CB5173 /* Pods_SampleUIKitIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUIKitIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,38 +61,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1028A54E37B054A08D8073 /* Pods_SampleUIKitIntegration.framework in Frameworks */,
+				26BE7E742A5C1C5500F5F6FE /* CoursesUxMiamFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08E8219154A8B75664A73521 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A3A838777FCA4C1374E5C99 /* Pods-SampleUIKitIntegration.debug.xcconfig */,
-				4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		1AE3A23B7AB6AC351670F417 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF379CDCDD7138D503CB5173 /* Pods_SampleUIKitIntegration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26BE7E702A5C1C4B00F5F6FE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				26BE7E712A5C1C4B00F5F6FE /* CoursesUxMiamFramework */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		BF85056E28578EF800651864 = {
 			isa = PBXGroup;
 			children = (
+				26BE7E702A5C1C4B00F5F6FE /* Packages */,
 				26BE7E6E2A5C05C200F5F6FE /* .gitignore */,
-				26BE7E6C2A5C048B00F5F6FE /* Podfile */,
 				BF85057928578EF800651864 /* SampleUIKitIntegration */,
 				BF85057828578EF800651864 /* Products */,
-				08E8219154A8B75664A73521 /* Pods */,
 				1AE3A23B7AB6AC351670F417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -143,17 +136,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF85058B28578EFA00651864 /* Build configuration list for PBXNativeTarget "SampleUIKitIntegration" */;
 			buildPhases = (
-				F9D28DD586669AEB0A9B7E17 /* [CP] Check Pods Manifest.lock */,
 				BF85057328578EF800651864 /* Sources */,
 				BF85057428578EF800651864 /* Frameworks */,
 				BF85057528578EF800651864 /* Resources */,
-				8C0054A33CA569A6CFF13B53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SampleUIKitIntegration;
+			packageProductDependencies = (
+				26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */,
+			);
 			productName = SampleUIKitIntegration;
 			productReference = BF85057728578EF800651864 /* SampleUIKitIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +176,9 @@
 				Base,
 			);
 			mainGroup = BF85056E28578EF800651864;
+			packageReferences = (
+				26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */,
+			);
 			productRefGroup = BF85057828578EF800651864 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,54 +196,11 @@
 				26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */,
 				BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */,
 				BF85058428578EFA00651864 /* Assets.xcassets in Resources */,
-				26BE7E6D2A5C048B00F5F6FE /* Podfile in Resources */,
 				BF85058228578EF800651864 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8C0054A33CA569A6CFF13B53 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9D28DD586669AEB0A9B7E17 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SampleUIKitIntegration-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF85057328578EF800651864 /* Sources */ = {
@@ -410,7 +364,6 @@
 		};
 		BF85058C28578EFA00651864 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A3A838777FCA4C1374E5C99 /* Pods-SampleUIKitIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,7 +393,6 @@
 		};
 		BF85058D28578EFA00651864 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/diarmuidmcgonagle/sources/miam/coursesU-iOS-templates/CoursesUxMiamFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */;
+			productName = CoursesUxMiamFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF85056F28578EF800651864 /* Project object */;
 }
