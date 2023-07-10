@@ -19,7 +19,6 @@ class RecipeDetailsViewController: UIHostingController<
     > {
 
         required init?(coder aDecoder: NSCoder) {
-     //            let itemSelector = ItemSelector(recipeId: "", onItemSelected: {})
                  super.init(coder: aDecoder)
              }
 
@@ -56,10 +55,7 @@ class RecipeDetailsViewController: UIHostingController<
                     recipeId: recipeId,
                     sponsorDetailsTapped: {_ in},
                     close: {
-                     // added small delay to ensure image reloads
-                     DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) {
                          self.navigationController?.popViewController(animated: true)
-                     }
                  })
                  self.rootView = itemSelector
                  // Do any additional setup after loading the view.
