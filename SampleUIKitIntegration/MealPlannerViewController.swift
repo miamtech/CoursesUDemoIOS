@@ -46,7 +46,12 @@ class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerV
             recipeCardTemplate: CoursesUMealPlannerRecipeCard(),
             loadingCardTemplate: CoursesUMealPlannerRecipeCardLoading(),
             placeholderCardTemplate: CoursesUMealPlannerRecipePlaceholder(),
-            showRecipe: {_ in },
+            showRecipe: { recipe in
+                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
+                }
+            },
             validateRecipes: {
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(BasketPreviewViewController(), animated: true)
@@ -58,6 +63,8 @@ class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerV
                 }
             })
         self.rootView = mealPlannerView
+        
+        
     }
 }
 //
