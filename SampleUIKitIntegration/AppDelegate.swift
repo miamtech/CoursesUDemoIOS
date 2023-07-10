@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         LogHandler.companion.info("Are you ready ? \(ContextHandlerInstance.shared.instance.isReady())")
-        
-//        let basketHandler = BasketHandlerInstance.shared.instance
         BasketHandlerInstance.shared.instance.setListenToRetailerBasket(func: {})
         BasketHandlerInstance.shared.instance.setPushProductsToRetailerBasket(func: {_ in})
         BasketHandlerInstance.shared.instance.pushProductsToMiamBasket(retailerBasket: [])
@@ -27,9 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
 
             UserHandler.shared.updateUserId(userId: "ed0a471a4bdc755664db84068119144b3a1772d8a6911057a0d6be6a3e075120")
-        // resets grocery cart
+
+        // resets grocery cart - good for testing, do NOT include on actual production
         GroceriesListHandler.shared.resetGroceriesList()
             
+
         return true
     }
 
