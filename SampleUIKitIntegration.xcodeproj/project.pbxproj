@@ -20,6 +20,7 @@
 		2672FED42A49C56000D59745 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED32A49C56000D59745 /* RecipesTableViewController.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
 		26BE7E6D2A5C048B00F5F6FE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6C2A5C048B00F5F6FE /* Podfile */; };
+		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
 		26E431DB2A543992002A9DAE /* ItemSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */; };
 		BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		2672FED32A49C56000D59745 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
 		26BE7E6C2A5C048B00F5F6FE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectorViewController.swift; sourceTree = "<group>"; };
 		4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUIKitIntegration.release.xcconfig"; path = "Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		5A3A838777FCA4C1374E5C99 /* Pods-SampleUIKitIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUIKitIntegration.debug.xcconfig"; path = "Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 				5A3A838777FCA4C1374E5C99 /* Pods-SampleUIKitIntegration.debug.xcconfig */,
 				4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 		BF85056E28578EF800651864 = {
 			isa = PBXGroup;
 			children = (
+				26BE7E6E2A5C05C200F5F6FE /* .gitignore */,
 				26BE7E6C2A5C048B00F5F6FE /* Podfile */,
 				BF85057928578EF800651864 /* SampleUIKitIntegration */,
 				BF85057828578EF800651864 /* Products */,
@@ -194,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */,
 				BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */,
 				BF85058428578EFA00651864 /* Assets.xcassets in Resources */,
 				26BE7E6D2A5C048B00F5F6FE /* Podfile in Resources */,
