@@ -45,6 +45,7 @@ class RecipeDetailsViewController: UIHostingController<
 
              override func viewDidLoad() {
                  let recipeId = UserDefaults.standard.value(forKey: "miam_mealplanner_recipeId") as? String ?? ""
+                 let guestNumber = UserDefaults.standard.value(forKey: "miam_mealplanner_numberofguests") as? Int ?? 4
                  self.title = "Catalogue"
                  super.viewDidLoad()
                  let itemSelector = RecipeDetailsViewTemplate.init(
@@ -53,6 +54,7 @@ class RecipeDetailsViewController: UIHostingController<
                     stepsContent: CoursesURecipeDetailsStepsView(),
                     footerContent: CoursesURecipeDetailsFooterView(),
                     recipeId: recipeId,
+                    numberOfGuests: guestNumber,
                     sponsorDetailsTapped: {_ in},
                     close: {
                          self.navigationController?.popViewController(animated: true)
