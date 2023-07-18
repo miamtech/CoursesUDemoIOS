@@ -49,11 +49,12 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
     }
 
     private static func createRootView(onRecipeSelected: ((String) -> Void)? = nil, onRecipeTapped: ((String) -> Void)? = nil) -> CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard, CoursesUMealPlannerFooter> {
+        let maxBudget = UserDefaults.standard.value(forKey: "miam_budget_remaining") as? Double ?? 0.0
         return CoursesUBudgetPlannerRecipePickerView(
             searchTemplate: CoursesUMealPlannerSearch(),
             cardTemplate: CoursesURecipeCard(),
             stickyFooter: CoursesUMealPlannerFooter(),
-            maxBudget: 35.0,
+            maxBudget: maxBudget,
             onRecipeSelected: onRecipeSelected ?? { _ in },
             onRecipeTapped: onRecipeTapped ?? { _ in }
         )
