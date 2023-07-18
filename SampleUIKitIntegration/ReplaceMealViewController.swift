@@ -53,7 +53,6 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
             searchTemplate: CoursesUMealPlannerSearch(),
             cardTemplate: CoursesURecipeCard(),
             stickyFooter: CoursesUMealPlannerFooter(),
-            maxBudget: 35.0,
             onRecipeSelected: onRecipeSelected ?? { _ in },
             onRecipeTapped: onRecipeTapped ?? { _ in }
         )
