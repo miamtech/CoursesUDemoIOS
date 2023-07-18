@@ -32,7 +32,7 @@ class RecipeDetailsViewController: UIHostingController<
              }
 
              public init() {
-                 let itemSelector = RecipeDetailsViewTemplate.init(
+                 let recipeDetails = RecipeDetailsViewTemplate.init(
                     headerContent: CoursesURecipeDetailsHeaderView(),
                     ingredientsContent: CoursesURecipeDetailsIngredientsView(),
                     stepsContent: CoursesURecipeDetailsStepsView(),
@@ -40,14 +40,14 @@ class RecipeDetailsViewController: UIHostingController<
                     recipeId: "",
                     sponsorDetailsTapped: {_ in},
                     close: {})
-                 super.init(rootView: itemSelector)
+                 super.init(rootView: recipeDetails)
              }
 
              override func viewDidLoad() {
                  let recipeId = UserDefaults.standard.value(forKey: "miam_mealplanner_recipeId") as? String ?? ""
                  self.title = "Catalogue"
                  super.viewDidLoad()
-                 let itemSelector = RecipeDetailsViewTemplate.init(
+                 let recipeDetails = RecipeDetailsViewTemplate.init(
                     headerContent: CoursesURecipeDetailsHeaderView(),
                     ingredientsContent: CoursesURecipeDetailsIngredientsView(),
                     stepsContent: CoursesURecipeDetailsStepsView(),
@@ -57,7 +57,7 @@ class RecipeDetailsViewController: UIHostingController<
                     close: {
                          self.navigationController?.popViewController(animated: true)
                  })
-                 self.rootView = itemSelector
+                 self.rootView = recipeDetails
                  // Do any additional setup after loading the view.
              }
          }
