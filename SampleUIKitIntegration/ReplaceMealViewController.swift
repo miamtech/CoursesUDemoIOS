@@ -16,8 +16,7 @@ import CoursesUxMiamFramework
 // to handle this
 class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipePickerView<
         CoursesUMealPlannerSearch,
-        CoursesURecipeCard,
-        CoursesUMealPlannerFooter>
+        CoursesURecipeCard>
 > {
 
     var onRecipeSelectedAction: ((String) -> Void)?
@@ -30,7 +29,7 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
         setupOnRecipeTappedAction()
     }
 
-    override init(rootView: CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard, CoursesUMealPlannerFooter>) {
+    override init(rootView: CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard>) {
         super.init(rootView: ReplaceMealViewController.createRootView(onRecipeTapped: onRecipeTappedAction))
         setupRecipeSelectedAction()
         setupOnRecipeTappedAction()
@@ -48,12 +47,11 @@ class ReplaceMealViewController: UIHostingController<CoursesUBudgetPlannerRecipe
         self.rootView = ReplaceMealViewController.createRootView(onRecipeSelected: onRecipeSelectedAction, onRecipeTapped: onRecipeTappedAction)
     }
 
-    private static func createRootView(onRecipeSelected: ((String) -> Void)? = nil, onRecipeTapped: ((String) -> Void)? = nil) -> CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard, CoursesUMealPlannerFooter> {
+    private static func createRootView(onRecipeSelected: ((String) -> Void)? = nil, onRecipeTapped: ((String) -> Void)? = nil) -> CoursesUBudgetPlannerRecipePickerView<CoursesUMealPlannerSearch, CoursesURecipeCard> {
         let maxBudget = UserDefaults.standard.value(forKey: "miam_budget_remaining") as? Double ?? 0.0
         return CoursesUBudgetPlannerRecipePickerView(
             searchTemplate: CoursesUMealPlannerSearch(),
             cardTemplate: CoursesURecipeCard(),
-            stickyFooter: CoursesUMealPlannerFooter(),
             onRecipeSelected: onRecipeSelected ?? { _ in },
             onRecipeTapped: onRecipeTapped ?? { _ in }
         )
