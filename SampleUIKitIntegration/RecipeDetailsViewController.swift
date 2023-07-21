@@ -38,6 +38,7 @@ class RecipeDetailsViewController: UIHostingController<
                     stepsContent: CoursesURecipeDetailsStepsView(),
                     footerContent: CoursesURecipeDetailsFooterView(),
                     recipeId: "",
+                    isForMealPlanner: true,
                     sponsorDetailsTapped: {_ in},
                     close: {})
                  super.init(rootView: itemSelector)
@@ -53,6 +54,7 @@ class RecipeDetailsViewController: UIHostingController<
                     stepsContent: CoursesURecipeDetailsStepsView(),
                     footerContent: CoursesURecipeDetailsFooterView(),
                     recipeId: recipeId,
+                    isForMealPlanner: true,
                     sponsorDetailsTapped: {_ in},
                     close: {
                          self.navigationController?.popViewController(animated: true)

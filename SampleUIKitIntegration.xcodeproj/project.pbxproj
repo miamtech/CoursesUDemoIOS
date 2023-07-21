@@ -10,6 +10,7 @@
 		26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D532A432F05005511D3 /* ReplaceMealViewController.swift */; };
 		26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */; };
 		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
+		26446FA72A6A7C8500395150 /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */; };
 		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
 		266EA7252A56CDC1005F808D /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */; };
 		2672FEC92A498A1700D59745 /* CustomUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEC82A498A1700D59745 /* CustomUIHostingController.swift */; };
@@ -20,7 +21,6 @@
 		2672FED42A49C56000D59745 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FED32A49C56000D59745 /* RecipesTableViewController.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
 		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
-		26BE7E742A5C1C5500F5F6FE /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */; };
 		26E431DB2A543992002A9DAE /* ItemSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */; };
 		BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
@@ -43,8 +43,8 @@
 		2672FED12A49C54200D59745 /* RecipeSuggestionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuggestionTestViewController.swift; sourceTree = "<group>"; };
 		2672FED32A49C56000D59745 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
+		267E23FF2A6A78DB004FE4EE /* coursesU-x-Miam-Framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "coursesU-x-Miam-Framework"; path = "../../../coursesU-iOS-templates/coursesU-x-Miam-Framework"; sourceTree = "<group>"; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		26BE7E712A5C1C4B00F5F6FE /* CoursesUxMiamFramework */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoursesUxMiamFramework; path = "../coursesU-iOS-templates/CoursesUxMiamFramework"; sourceTree = "<group>"; };
 		26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectorViewController.swift; sourceTree = "<group>"; };
 		BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerFormViewController.swift; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BE7E742A5C1C5500F5F6FE /* CoursesUxMiamFramework in Frameworks */,
+				26446FA72A6A7C8500395150 /* CoursesUxMiamFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 		26BE7E702A5C1C4B00F5F6FE /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				26BE7E712A5C1C4B00F5F6FE /* CoursesUxMiamFramework */,
+				267E23FF2A6A78DB004FE4EE /* coursesU-x-Miam-Framework */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			);
 			name = SampleUIKitIntegration;
 			packageProductDependencies = (
-				26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */,
+				26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */,
 			);
 			productName = SampleUIKitIntegration;
 			productReference = BF85057728578EF800651864 /* SampleUIKitIntegration.app */;
@@ -177,7 +177,6 @@
 			);
 			mainGroup = BF85056E28578EF800651864;
 			packageReferences = (
-				26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */,
 			);
 			productRefGroup = BF85057828578EF800651864 /* Products */;
 			projectDirPath = "";
@@ -443,21 +442,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/diarmuidmcgonagle/sources/miam/coursesU-iOS-templates/CoursesUxMiamFramework";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		26BE7E732A5C1C5500F5F6FE /* CoursesUxMiamFramework */ = {
+		26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 26BE7E722A5C1C5500F5F6FE /* XCRemoteSwiftPackageReference "CoursesUxMiamFramework" */;
 			productName = CoursesUxMiamFramework;
 		};
 /* End XCSwiftPackageProductDependency section */
