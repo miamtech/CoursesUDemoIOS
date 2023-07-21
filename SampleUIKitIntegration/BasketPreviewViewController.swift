@@ -37,7 +37,11 @@ CoursesUMealPlannerBasketPreviewLoading,
             recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
             productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),validateRecipes: {}, replaceProduct: {_ in})
+            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
+            validateRecipes: {},
+            replaceProduct: {_ in},
+            onRecipeTapped: {_ in}
+        )
         super.init(rootView: budgetPreview)
     }
 
@@ -59,6 +63,12 @@ CoursesUMealPlannerBasketPreviewLoading,
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
+                }
+            },
+            onRecipeTapped: { recipe in
+                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
+                DispatchQueue.main.async {
+                    self.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
                 }
             }
         )
