@@ -14,12 +14,7 @@ class RecapPurchaseViewController: UIHostingController<MealPlannerRecapView<Cour
 
 
     required init?(coder aDecoder: NSCoder) {
-        let recapPurchase = MealPlannerRecapView.init(
-            template: CoursesUMealPlannerRecapView(),
-            onOurPromotions: {},
-            onClose: {}
-        )
-        super.init(coder: aDecoder, rootView: recapPurchase)
+        super.init(coder: aDecoder)
     }
 
     override init(rootView: MealPlannerRecapView<CoursesUMealPlannerRecapView>) {
@@ -28,9 +23,8 @@ class RecapPurchaseViewController: UIHostingController<MealPlannerRecapView<Cour
 
     public init() {
         let recapPurchase = MealPlannerRecapView.init(
-            template: CoursesUMealPlannerRecapView(),
-            onOurPromotions: {},
-            onClose: {}
+            template: CoursesUMealPlannerRecapView(onClose: {}),
+            onTapGesture: {}
         )
         super.init(rootView: recapPurchase)
     }
@@ -39,12 +33,12 @@ class RecapPurchaseViewController: UIHostingController<MealPlannerRecapView<Cour
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
         let recapPurchase = MealPlannerRecapView.init(
-            template: CoursesUMealPlannerRecapView(),
-            onOurPromotions: {
+            template: CoursesUMealPlannerRecapView(
+                onClose: {
+                    print("closing")
+            }),
+            onTapGesture: {
                 print("promoting")
-            },
-            onClose: {
-                print("closing")
             }
         )
         self.rootView = recapPurchase
