@@ -13,6 +13,7 @@ import CoursesUxMiamFramework
 class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
 CoursesUMealPlannerBasketPreviewLoading,
     CoursesUMealPlannerBasketPreviewRecipeOverview,
+    CoursesUMealPlannerRecipeCardLoading,
     CoursesUMealPlannerBasketPreviewProduct,
     CoursesUMealPlannerBasketPreviewSectionTitle,
     CoursesUMealPlannerBasketPreviewSectionProduct>
@@ -25,6 +26,7 @@ CoursesUMealPlannerBasketPreviewLoading,
     override init(rootView: CoursesUMealPlannerBasketPreviewView<
                   CoursesUMealPlannerBasketPreviewLoading,
                   CoursesUMealPlannerBasketPreviewRecipeOverview,
+                  CoursesUMealPlannerRecipeCardLoading,
                   CoursesUMealPlannerBasketPreviewProduct,
                   CoursesUMealPlannerBasketPreviewSectionTitle,
                   CoursesUMealPlannerBasketPreviewSectionProduct>) {
@@ -35,6 +37,7 @@ CoursesUMealPlannerBasketPreviewLoading,
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
             recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
+            recipeLoadingTemplate: CoursesUMealPlannerRecipeCardLoading(),
             productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
             sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
@@ -51,6 +54,7 @@ CoursesUMealPlannerBasketPreviewLoading,
         let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
             loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
             recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
+            recipeLoadingTemplate: CoursesUMealPlannerRecipeCardLoading(),
             productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
             sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
