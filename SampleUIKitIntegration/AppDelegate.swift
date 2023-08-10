@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
 
         UserHandler.shared.updateUserId(userId: "tiboTheMan")
+        
+//        BasketHandlerInstance.shared.instance.setPriceBookKey("LIV")
 
         // resets grocery cart - good for testing, do NOT include on actual production
 //        GroceriesListHandler.shared.resetGroceriesList()
