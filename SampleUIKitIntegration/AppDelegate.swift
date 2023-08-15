@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PointOfSaleHandler.shared.setSupplierOrigin(origin:"app.coursesu.com")
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
 
-        UserHandler.shared.updateUserId(userId: "tiboTheMan")
+        UserHandler.shared.updateUserId(userId: "tiboTheManiac")
         
 //        BasketHandlerInstance.shared.instance.setPriceBookKey("LIV")
 
