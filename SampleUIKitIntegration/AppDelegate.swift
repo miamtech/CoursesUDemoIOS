@@ -23,13 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PointOfSaleHandler.shared.updateStoreId(storeId: "25910")
         PointOfSaleHandler.shared.setSupplierOrigin(origin:"app.coursesu.com")
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
-
-        UserHandler.shared.updateUserId(userId: "tiboTheManiac")
-        
-//        BasketHandlerInstance.shared.instance.setPriceBookKey("LIV")
-
-        // resets grocery cart - good for testing, do NOT include on actual production
-//        GroceriesListHandler.shared.resetGroceriesList()
+        UserHandler.shared.updateUserId(userId: "tiboTheManiaccc")
         BasketHandlerInstance.shared.instance.clear()
 
         return true
