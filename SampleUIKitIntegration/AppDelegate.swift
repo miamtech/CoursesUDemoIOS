@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PointOfSaleHandler.shared.updateStoreId(storeId: "25910")
         PointOfSaleHandler.shared.setSupplierOrigin(origin:"app.coursesu.com")
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
-        UserHandler.shared.updateUserId(userId: "tiboTheManiaccc")
+        UserHandler.shared.updateUserId(userId: "test_\(UUID())")
         BasketHandlerInstance.shared.instance.clear()
 
         return true
