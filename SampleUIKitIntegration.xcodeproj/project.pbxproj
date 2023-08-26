@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26257E072A9A6E6C00F85667 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26257E062A9A6E6B00F85667 /* GoogleService-Info.plist */; };
+		26257E0A2A9A6FA100F85667 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 26257E092A9A6FA100F85667 /* FirebaseAppDistribution-Beta */; };
 		26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D532A432F05005511D3 /* ReplaceMealViewController.swift */; };
 		26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */; };
 		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26257E062A9A6E6B00F85667 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26311D532A432F05005511D3 /* ReplaceMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMealViewController.swift; sourceTree = "<group>"; };
 		26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPreviewViewController.swift; sourceTree = "<group>"; };
 		26311D572A434233005511D3 /* RecapPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapPurchaseViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1028A54E37B054A08D8073 /* Pods_SampleUIKitIntegration.framework in Frameworks */,
+				26257E0A2A9A6FA100F85667 /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,7 @@
 		BF85056E28578EF800651864 = {
 			isa = PBXGroup;
 			children = (
+				26257E062A9A6E6B00F85667 /* GoogleService-Info.plist */,
 				26BE7E6E2A5C05C200F5F6FE /* .gitignore */,
 				26BE7E6C2A5C048B00F5F6FE /* Podfile */,
 				BF85057928578EF800651864 /* SampleUIKitIntegration */,
@@ -154,6 +159,9 @@
 			dependencies = (
 			);
 			name = SampleUIKitIntegration;
+			packageProductDependencies = (
+				26257E092A9A6FA100F85667 /* FirebaseAppDistribution-Beta */,
+			);
 			productName = SampleUIKitIntegration;
 			productReference = BF85057728578EF800651864 /* SampleUIKitIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +190,9 @@
 				Base,
 			);
 			mainGroup = BF85056E28578EF800651864;
+			packageReferences = (
+				26257E082A9A6FA100F85667 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BF85057828578EF800651864 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +212,7 @@
 				BF85058428578EFA00651864 /* Assets.xcassets in Resources */,
 				26BE7E6D2A5C048B00F5F6FE /* Podfile in Resources */,
 				BF85058228578EF800651864 /* Main.storyboard in Resources */,
+				26257E072A9A6E6C00F85667 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +431,7 @@
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiamCoursesUDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,6 +462,7 @@
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiamCoursesUDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -490,6 +504,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26257E082A9A6FA100F85667 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26257E092A9A6FA100F85667 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26257E082A9A6FA100F85667 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF85056F28578EF800651864 /* Project object */;
 }

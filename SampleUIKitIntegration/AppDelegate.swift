@@ -10,6 +10,7 @@ import SwiftUI
 import miamCore
 import MiamIOSFramework
 import CoursesUxMiamFramework
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,16 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BasketHandlerInstance.shared.instance.setListenToRetailerBasket(func: {})
         BasketHandlerInstance.shared.instance.setPushProductsToRetailerBasket(func: {_ in})
         BasketHandlerInstance.shared.instance.pushProductsToMiamBasket(retailerBasket: [])
-        
         PointOfSaleHandler.shared.updateStoreId(storeId: "25910")
         PointOfSaleHandler.shared.setSupplierOrigin(origin:"app.coursesu.com")
         PointOfSaleHandler.shared.setSupplier(supplierId: 7)
+        UserHandler.shared.updateUserId(userId: "test_\(UUID())")
+        BasketHandlerInstance.shared.instance.clear()
 
-            UserHandler.shared.updateUserId(userId: "ed0a471a4bdc755664db84068119144b3a1772d8a6911057a0d6be6a3e075120")
-
-        // resets grocery cart - good for testing, do NOT include on actual production
-        GroceriesListHandler.shared.resetGroceriesList()
-            
+        FirebaseApp.configure()
 
         return true
     }
