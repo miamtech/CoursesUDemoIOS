@@ -33,7 +33,7 @@ class MealPlannerFormViewController: UIHostingController<MealPlannerFormView<Cou
     public init() {
         let budgetForm = MealPlannerFormView.init(
             budgetForm: CoursesUMealPlannerForm(includeTitle: true),
-                    budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
+                    budgetInfos: nil,
                     onBudgetValidated: {_ in print("this will nav")}
                 )
                 super.init(rootView: budgetForm)
@@ -59,7 +59,7 @@ class MealPlannerFormViewController: UIHostingController<MealPlannerFormView<Cou
             self.title = "Mon assistant Budget repas"
         let budgetForm = MealPlannerFormView.init(
             budgetForm: CoursesUMealPlannerForm(),
-            budgetInfos: BudgetInfos(moneyBudget: 0.0, numberOfGuests: 0, numberOfMeals: 0),
+            budgetInfos: nil,
             onBudgetValidated: {_ in
                 DispatchQueue.main.async {
                     self.navigationController?.pushViewController(MealPlannerViewController(), animated: true)
