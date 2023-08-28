@@ -47,7 +47,7 @@
 		2672FED12A49C54200D59745 /* RecipeSuggestionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuggestionTestViewController.swift; sourceTree = "<group>"; };
 		2672FED32A49C56000D59745 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
-		26BE7E6C2A5C048B00F5F6FE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		26BE7E6C2A5C048B00F5F6FE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectorViewController.swift; sourceTree = "<group>"; };
 		4085E1A84415A06BF033A0F0 /* Pods-SampleUIKitIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUIKitIntegration.release.xcconfig"; path = "Target Support Files/Pods-SampleUIKitIntegration/Pods-SampleUIKitIntegration.release.xcconfig"; sourceTree = "<group>"; };
@@ -427,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
@@ -442,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = Miam.SampleUIKitIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -458,7 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
@@ -473,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.7;
+				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = Miam.SampleUIKitIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
