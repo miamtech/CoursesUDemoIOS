@@ -62,8 +62,8 @@ class DiscloseViewController: UIViewController {
         let coursesUMealPlannerCallToAction = CoursesUMealPlannerCallToAction()
         let coursesUMealPlannerCallToActionView = coursesUMealPlannerCallToAction.content {
             print("CoursesUMealPlannerCallToAction tapped!")
-            DispatchQueue.main.async {
-                self.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
+            DispatchQueue.main.async { [weak self] in
+                self?.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
             }
         }
         
