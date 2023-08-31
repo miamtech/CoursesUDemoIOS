@@ -18,11 +18,12 @@ class RecapPurchaseViewController: UIViewController {
     var swiftUIView: MealPlannerRecapView<CoursesUMealPlannerRecapView> {
         return MealPlannerRecapView(
             template: CoursesUMealPlannerRecapView(
+                // i believe onClose is depreciated as designers don't want x
                 onClose: { [weak self] in
                     self?.navigationController?.popToRootViewController(animated: true)
             }),
             onTapGesture: { [weak self] in
-                print("promoting")
+                self?.navigationController?.popToRootViewController(animated: true)
             })
     }
     // The hosting controller for your SwiftUI view
