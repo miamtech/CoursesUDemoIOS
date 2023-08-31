@@ -39,7 +39,8 @@ class MealPlannerFormViewController: UIViewController {
         navigationController?.navigationBar.compactAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = UIColor.white
-        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Retour", style: .plain, target: nil, action: nil)
+
         // Initialize the hosting controller with your SwiftUI view
         hostingController = UIHostingController(rootView: swiftUIView)
         // Add as a child of the current view controller

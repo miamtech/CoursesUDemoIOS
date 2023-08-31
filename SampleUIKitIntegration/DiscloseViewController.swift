@@ -21,6 +21,8 @@ class DiscloseViewController: UIViewController {
         
         // Remove the old UIKit button
         self.actionButton.removeFromSuperview()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Retour", style: .plain, target: nil, action: nil)
 
         // Your SwiftUI Button
         let coursesUMealPlannerCallToAction = CoursesUMealPlannerCallToAction()
