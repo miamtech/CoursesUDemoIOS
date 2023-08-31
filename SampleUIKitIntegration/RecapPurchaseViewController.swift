@@ -10,42 +10,6 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUxMiamFramework
 
-//class RecapPurchaseViewController: UIHostingController<MealPlannerRecapView<CoursesUMealPlannerRecapView>> {
-//
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
-//
-//    override init(rootView: MealPlannerRecapView<CoursesUMealPlannerRecapView>) {
-//        super.init(rootView: rootView)
-//    }
-//
-//    public init() {
-//        let recapPurchase = MealPlannerRecapView.init(
-//            template: CoursesUMealPlannerRecapView(onClose: {}),
-//            onTapGesture: {}
-//        )
-//        super.init(rootView: recapPurchase)
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.title = "Mon assistant Budget repas"
-//        let recapPurchase = MealPlannerRecapView.init(
-//            template: CoursesUMealPlannerRecapView(
-//                onClose: {
-//                    print("closing")
-//            }),
-//            onTapGesture: {
-//                print("promoting")
-//            }
-//        )
-//        self.rootView = recapPurchase
-//        // Do any additional setup after loading the view.
-//    }
-//}
-
 class RecapPurchaseViewController: UIViewController {
     deinit {
         print("deinit: RecapPurchaseViewController is being deallocated")
@@ -57,7 +21,7 @@ class RecapPurchaseViewController: UIViewController {
                 onClose: { [weak self] in
                     self?.navigationController?.popToRootViewController(animated: true)
             }),
-            onTapGesture: {
+            onTapGesture: { [weak self] in
                 print("promoting")
             })
     }

@@ -19,10 +19,9 @@ class MealPlannerFormViewController: UIViewController {
         return MealPlannerFormView(
             budgetForm: CoursesUMealPlannerForm(),
             budgetInfos: nil,
-            onBudgetValidated: { recipe in
-                DispatchQueue.main.async { [weak self] in
-                    guard let strongSelf = self else { return }
-                    strongSelf.navigationController?.pushViewController(MealPlannerViewController(), animated: true)
+            onBudgetValidated: { [weak self] recipe in
+                DispatchQueue.main.async {
+                    self?.navigationController?.pushViewController(MealPlannerViewController(), animated: true)
                 }
             })
     }

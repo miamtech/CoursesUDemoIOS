@@ -9,82 +9,8 @@ import UIKit
 import SwiftUI
 import MiamIOSFramework
 import CoursesUxMiamFramework
-//
-//class BasketPreviewViewController: UIHostingController<CoursesUMealPlannerBasketPreviewView<
-//CoursesUMealPlannerBasketPreviewLoading,
-//    CoursesUMealPlannerBasketPreviewRecipeOverview,
-//    CoursesUMealPlannerRecipeCardLoading,
-//    CoursesUMealPlannerBasketPreviewProduct,
-//    CoursesUMealPlannerBasketPreviewSectionTitle,
-//    CoursesUMealPlannerBasketPreviewSectionProduct>
-//> {
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
-//
-//    override init(rootView: CoursesUMealPlannerBasketPreviewView<
-//                  CoursesUMealPlannerBasketPreviewLoading,
-//                  CoursesUMealPlannerBasketPreviewRecipeOverview,
-//                  CoursesUMealPlannerRecipeCardLoading,
-//                  CoursesUMealPlannerBasketPreviewProduct,
-//                  CoursesUMealPlannerBasketPreviewSectionTitle,
-//                  CoursesUMealPlannerBasketPreviewSectionProduct>) {
-//        super.init(rootView: rootView)
-//    }
-//
-//    public init() {
-//        let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
-//            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
-//            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-//            recipeLoadingTemplate: CoursesUMealPlannerRecipeCardLoading(),
-//            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
-//            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
-//            validateRecipes: {},
-//            replaceProduct: {_ in},
-//            onRecipeTapped: {_ in}
-//        )
-//        super.init(rootView: budgetPreview)
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        self.title = "Mon assistant Budget repas"
-//        let budgetPreview = CoursesUMealPlannerBasketPreviewView.init(
-//            loadingTemplate: CoursesUMealPlannerBasketPreviewLoading(),
-//            recipeOverviewTemplate: CoursesUMealPlannerBasketPreviewRecipeOverview(),
-//            recipeLoadingTemplate: CoursesUMealPlannerRecipeCardLoading(),
-//            productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
-//            sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
-//            sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
-//            validateRecipes: {
-//                DispatchQueue.main.async {
-//                    self.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
-//                }
-//            },
-//            replaceProduct: { recipe in
-//                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-//                DispatchQueue.main.async {
-//                    self.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
-//                }
-//            },
-//            onRecipeTapped: { recipe in
-//                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-//                DispatchQueue.main.async {
-//                    self.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
-//                }
-//            }
-//        )
-//        self.rootView = budgetPreview
-//        // Do any additional setup after loading the view.
-//
-//
-//    }
-//}
 
 class BasketPreviewViewController: UIViewController {
-    
     deinit {
         print("deinit: BasketPreviewViewController is being deallocated")
     }
@@ -104,20 +30,20 @@ class BasketPreviewViewController: UIViewController {
             productTemplate: CoursesUMealPlannerBasketPreviewProduct(),
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
             sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
-            validateRecipes: {
-                DispatchQueue.main.async { [weak self] in
+            validateRecipes: { [weak self] in
+                DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
                 }
             },
-            replaceProduct: { recipe in
+            replaceProduct: { [weak self] recipe in
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
                 }
             },
-            onRecipeTapped: { recipe in
+            onRecipeTapped: { [weak self] recipe in
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
                 }
             })
