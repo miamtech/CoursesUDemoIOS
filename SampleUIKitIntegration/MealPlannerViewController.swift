@@ -10,18 +10,21 @@ import SwiftUI
 import MiamIOSFramework
 import CoursesUxMiamFramework
 
-class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerView<CoursesUMealPlannerToolbar, CoursesUMealPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUMealPlannerRecipeCard, CoursesUMealPlannerRecipeCardLoading, CoursesUMealPlannerRecipePlaceholder>> {
-
-    required init?(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
-        }
-
-    override init(rootView: CoursesUMealPlannerPlannerView<CoursesUMealPlannerToolbar, CoursesUMealPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUMealPlannerRecipeCard, CoursesUMealPlannerRecipeCardLoading, CoursesUMealPlannerRecipePlaceholder>) {
-        super.init(rootView: rootView)
+class MealPlannerViewController: UIViewController {
+    deinit {
+        print("deinit: MealPlannerViewController is being deallocated")
     }
-
-    public init() {
-        let mealPlannerView = CoursesUMealPlannerPlannerView.init(
+    // Your SwiftUI View
+    var swiftUIView: CoursesUMealPlannerPlannerView<
+            CoursesUMealPlannerToolbar,
+            CoursesUMealPlannerFooter,
+            MiamBudgetPlannerLoading,
+            MiamBudgetPlannerEmpty,
+            CoursesUMealPlannerRecipeCard,
+            CoursesUMealPlannerRecipeCardLoading,
+            CoursesUMealPlannerRecipePlaceholder
+    > {
+        return CoursesUMealPlannerPlannerView(
             toolbarTemplate: CoursesUMealPlannerToolbar(),
             footerTemplate: CoursesUMealPlannerFooter(),
             loadingTemplate: MiamBudgetPlannerLoading(),
@@ -29,89 +32,58 @@ class MealPlannerViewController: UIHostingController<CoursesUMealPlannerPlannerV
             recipeCardTemplate: CoursesUMealPlannerRecipeCard(),
             loadingCardTemplate: CoursesUMealPlannerRecipeCardLoading(),
             placeholderCardTemplate: CoursesUMealPlannerRecipePlaceholder(),
-            showRecipe: {_ in },
-            validateRecipes: {},
-            replaceRecipe: {_ in })
-        super.init(rootView: mealPlannerView)
+            showRecipe: { [weak self] recipe in
+                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
+                DispatchQueue.main.async {
+                    guard let strongSelf = self else { return }
+                    strongSelf.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
+                }
+            },
+            validateRecipes: { [weak self] in
+                DispatchQueue.main.async {
+                    guard let strongSelf = self else { return }
+                    strongSelf.navigationController?.pushViewController(BasketPreviewViewController(), animated: true)
+                }
+            },
+            replaceRecipe: { [weak self] _ in
+                DispatchQueue.main.async {
+                    guard let strongSelf = self else { return }
+                    strongSelf.navigationController?.pushViewController(ReplaceMealViewController(), animated: true)
+                }
+            })
     }
+    
+    // The hosting controller for your SwiftUI view
+    private var hostingController: UIHostingController<CoursesUMealPlannerPlannerView<
+        CoursesUMealPlannerToolbar,
+        CoursesUMealPlannerFooter,
+        MiamBudgetPlannerLoading,
+        MiamBudgetPlannerEmpty,
+        CoursesUMealPlannerRecipeCard,
+        CoursesUMealPlannerRecipeCardLoading,
+        CoursesUMealPlannerRecipePlaceholder
+>>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Mon assistant Budget repas"
-        let mealPlannerView = CoursesUMealPlannerPlannerView.init(
-            toolbarTemplate: CoursesUMealPlannerToolbar(),
-            footerTemplate: CoursesUMealPlannerFooter(),
-            loadingTemplate: MiamBudgetPlannerLoading(),
-            emptyTemplate: MiamBudgetPlannerEmpty(),
-            recipeCardTemplate: CoursesUMealPlannerRecipeCard(),
-            loadingCardTemplate: CoursesUMealPlannerRecipeCardLoading(),
-            placeholderCardTemplate: CoursesUMealPlannerRecipePlaceholder(),
-            showRecipe: { recipe in
-                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
-                }
-            },
-            validateRecipes: {
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(BasketPreviewViewController(), animated: true)
-                }
-            },
-            replaceRecipe: { _ in
-                DispatchQueue.main.async {
-                    self.navigationController?.pushViewController(ReplaceMealViewController(), animated: true)
-                }
-            })
-        self.rootView = mealPlannerView
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Retour", style: .plain, target: nil, action: nil)
+        // Initialize the hosting controller with your SwiftUI view
+        hostingController = UIHostingController(rootView: swiftUIView)
+        // Add as a child of the current view controller
+        addChild(hostingController)
+        // Add the SwiftUI view to the view controller view hierarchy
+        view.addSubview(hostingController.view)
+        // Setup constraints to dictate the size and positioning of the SwiftUI view
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
-        
+        // Complete the addition of the child view controller
+        hostingController.didMove(toParent: self)
     }
 }
-//
-//
-//class MealPlannerViewController: UIHostingController<BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>> {
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        let budgetPlannerView = BudgetPlannerView.init(
-//            toolbarTemplate: CoursesUBudgetPlannerToolbar(),
-//            footerTemplate: CoursesUBudgetPlannerFooter(),
-//            loadingTemplate: MiamBudgetPlannerLoading(),
-//            emptyTemplate: MiamBudgetPlannerEmpty(),
-//            recipeCardTemplate: CoursesUBudgetRecipeCard(),
-//            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
-//            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-//            selectedRecipe: .constant("123"),
-//            showRecipe: {_ in},
-//            validateRecipes: {},
-//            replaceRecipe: {_ in})
-//        super.init(coder: aDecoder, rootView: budgetPlannerView)
-//    }
-//
-//    override init(rootView: BudgetPlannerView<CoursesUBudgetPlannerToolbar, CoursesUBudgetPlannerFooter, MiamBudgetPlannerLoading, MiamBudgetPlannerEmpty, CoursesUBudgetRecipeCard, CoursesUBudgetRecipeCardLoading, CoursesUBudgetRecipePlaceholder>) {
-//        super.init(rootView: rootView)
-//    }
-//
-//    public init() {
-//        let budgetPlannerView = BudgetPlannerView.init(
-//            toolbarTemplate: CoursesUBudgetPlannerToolbar(),
-//            footerTemplate: CoursesUBudgetPlannerFooter(),
-//            loadingTemplate: MiamBudgetPlannerLoading(),
-//            emptyTemplate: MiamBudgetPlannerEmpty(),
-//            recipeCardTemplate: CoursesUBudgetRecipeCard(),
-//            loadingCardTemplate: CoursesUBudgetRecipeCardLoading(),
-//            placeholderCardTemplate: CoursesUBudgetRecipePlaceholder(),
-//            selectedRecipe: .constant("123"),
-//            showRecipe: {_ in},
-//            validateRecipes: {},
-//            replaceRecipe: {_ in})
-//        super.init(rootView: budgetPlannerView)
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//}

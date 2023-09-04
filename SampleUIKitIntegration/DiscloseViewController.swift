@@ -11,8 +11,8 @@ import CoursesUxMiamFramework
 import SwiftUI
 
 class DiscloseViewController: UIViewController {
-    
     @IBOutlet weak var actionButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,25 +21,24 @@ class DiscloseViewController: UIViewController {
         
         // Remove the old UIKit button
         self.actionButton.removeFromSuperview()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Retour", style: .plain, target: nil, action: nil)
 
         // Your SwiftUI Button
         let coursesUMealPlannerCallToAction = CoursesUMealPlannerCallToAction()
-        let coursesUMealPlannerCallToActionView = coursesUMealPlannerCallToAction.content {
+        let coursesUMealPlannerCallToActionView = coursesUMealPlannerCallToAction.content { [weak self] in
             print("CoursesUMealPlannerCallToAction tapped!")
             DispatchQueue.main.async {
-                self.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
+                self?.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
             }
         }
         
         // Create a UIHostingController with coursesUMealPlannerCallToActionView
         let hostingController = UIHostingController(rootView: coursesUMealPlannerCallToActionView)
-        
         // Add the hostingController as a child view controller
         self.addChild(hostingController)
-        
         // Add hostingController's view to the current view
         self.view.addSubview(hostingController.view)
-        
         // Set hostingController's view size and position
         hostingController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -48,7 +47,6 @@ class DiscloseViewController: UIViewController {
             hostingController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             hostingController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
-        
         // Notify the hostingController that it has been moved to the current view controller
         hostingController.didMove(toParent: self)
     }
