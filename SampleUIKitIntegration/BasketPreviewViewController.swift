@@ -35,8 +35,8 @@ class BasketPreviewViewController: UIViewController {
                     self?.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
                 }
             },
-            replaceProduct: { [weak self] recipe in
-                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
+            replaceProduct: { [weak self] in
+//                UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
                 DispatchQueue.main.async {
                     self?.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
                 }
