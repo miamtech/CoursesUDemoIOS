@@ -16,10 +16,12 @@ class RecapPurchaseViewController: UIViewController {
             template: CoursesUMealPlannerRecapView(
                 // i believe onClose is depreciated as designers don't want x
                 onClose: { [weak self] in
-                    self?.navigationController?.popToRootViewController(animated: true)
+                    guard let strongSelf = self else { return }
+                    strongSelf.navigationController?.popToRootViewController(animated: true)
             }),
             onTapGesture: { [weak self] in
-                self?.navigationController?.popToRootViewController(animated: true)
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.popToRootViewController(animated: true)
             })
     }
     // The hosting controller for your SwiftUI view

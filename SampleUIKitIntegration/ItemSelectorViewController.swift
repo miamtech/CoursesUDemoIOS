@@ -21,7 +21,8 @@ class ItemSelectorViewController: UIViewController {
             onItemSelected: { [weak self] in
                 // added small delay to ensure image reloads
                 DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) {
-                    self?.navigationController?.popViewController(animated: true)
+                    guard let strongSelf = self else { return }
+                    strongSelf.navigationController?.popViewController(animated: true)
                 }
             })
     }

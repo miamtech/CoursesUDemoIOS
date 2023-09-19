@@ -30,7 +30,8 @@ class RecipeDetailsViewController: UIViewController {
             isForMealPlanner: true,
             sponsorDetailsTapped: {_ in},
             close: { [weak self] in
-                self?.navigationController?.popViewController(animated: true)
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.popViewController(animated: true)
          })
     }
     // The hosting controller for your SwiftUI view

@@ -31,21 +31,21 @@ class BasketPreviewViewController: UIViewController {
             sectionTitleTemplate: CoursesUMealPlannerBasketPreviewSectionTitle(),
             sectionProductTemplate: CoursesUMealPlannerBasketPreviewSectionProduct(),
             validateRecipes: { [weak self] in
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.pushViewController(RecapPurchaseViewController(), animated: true)
+                
             },
             replaceProduct: { [weak self] recipe in
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.pushViewController(ItemSelectorViewController(), animated: true)
+                
             },
             onRecipeTapped: { [weak self] recipe in
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
+                
             })
     }
     // The hosting controller for your SwiftUI view

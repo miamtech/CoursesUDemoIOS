@@ -22,15 +22,15 @@ class ReplaceMealViewController: UIViewController {
             searchTemplate: CoursesUMealPlannerSearch(),
             cardTemplate: CoursesURecipeCard(),
             onRecipeSelected: { [weak self] _ in
-                DispatchQueue.main.async {
-                    self?.navigationController?.popViewController(animated: true)
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.popViewController(animated: true)
+                
             },
             onRecipeTapped: { [weak self] recipe in
                 UserDefaults.standard.set(recipe, forKey: "miam_mealplanner_recipeId")
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
-                }
+                guard let strongSelf = self else { return }
+                strongSelf.navigationController?.pushViewController(RecipeDetailsViewController(), animated: true)
+                
             })
     }
     // The hosting controller for your SwiftUI view
