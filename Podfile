@@ -6,7 +6,7 @@ target 'SampleUIKitIntegration' do
   use_frameworks!
 
   # Pods for SampleUIKitIntegration
-    pod 'CoursesUxMiamFramework', '1.2,0'
-    pod 'miamCore', '3.12.13'
-    pod 'MiamIOSFramework', '3.12.13'
+    pod 'CoursesUxMiamFramework', '1.2.3'
+    pod 'miamCore', '3.13.0'
+    pod 'MiamIOSFramework', '3.13.0'
 end
