@@ -13,20 +13,21 @@ import MealzNavModuleIOS
 
 struct MealzViewConfig {
     
-    // ------------------------------- BASE VIEWS  -------------------------------
-    
-    static let baseViews = BasePageViewParameters(
-        loading: TypeSafeLoading(CoursesULoadingView()),
-        background: TypeSafeBackground(CoursesUBackgroundView())
-    )
-    
     // ----------------------------- RECIPE DETAILS ------------------------------
     
-    
-    static let recipeDetailsConfig = RecipeDetailsFeatureConstructor()
+    static let recipeDetailsBaseViews = BasePageViewParameters(
+        loading: TypeSafeLoading(CoursesULoadingView())
+    )
+    static let recipeDetailsConfig = RecipeDetailsFeatureConstructor(
+        baseViews: recipeDetailsBaseViews
+    )
     
     // ------------------------------- MEAL PLANNER ------------------------------
     
+    static let mealPlannerBaseViews = BasePageViewParameters(
+        loading: TypeSafeLoading(CoursesULoadingView()),
+        background: TypeSafeBackground(CoursesUBackgroundView())
+    )
     static let mealPlannerFormView = MealPlannerFormViewOptions(
         form: TypeSafeMealPlannerForm(CoursesUMealPlannerForm())
     )
@@ -56,11 +57,17 @@ struct MealzViewConfig {
         success: TypeSafeMealPlannerRecap(CoursesUMealPlannerRecapView())
     )
     
+    static let mealPlannerRecipesListGridConfig = MealPlannerRecipesListGridConfig(
+        spacing: CGSize(width: 4, height: 4)
+    )
+    
     static let mealPlannerConfig = MealPlannerFeatureConstructor(
+        baseViews: mealPlannerBaseViews,
         mealPlannerFormViewOptions: mealPlannerFormView,
         mealPlannerResultsViewOptions: mealPlannerResultsView,
         mealPlannerRecipePickerViewOptions: mealPlannerReplaceRecipeView,
         basketRecipeViewOptions: basketRecipeView,
-        mealPlannerRecapViewOptions: mealPlannerRecapView
+        mealPlannerRecapViewOptions: mealPlannerRecapView,
+        mealPlannerRecipesListGridConfig: mealPlannerRecipesListGridConfig
     )
 }
