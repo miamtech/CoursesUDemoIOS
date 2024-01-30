@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D532A432F05005511D3 /* ReplaceMealViewController.swift */; };
-		26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */; };
-		26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26311D572A434233005511D3 /* RecapPurchaseViewController.swift */; };
 		264256822B5ED70A00010D91 /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 264256812B5ED70A00010D91 /* CoursesUxMiamFramework */; };
 		264256842B5ED7DF00010D91 /* MealzViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264256832B5ED7DF00010D91 /* MealzViewConfig.swift */; };
 		264256872B5ED82800010D91 /* MealzUIModuleIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 264256862B5ED82800010D91 /* MealzUIModuleIOS */; };
@@ -20,14 +17,9 @@
 		264256972B5EE08400010D91 /* PretendProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264256922B5EE07600010D91 /* PretendProduct.swift */; };
 		264256982B5EE08400010D91 /* PretendBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264256932B5EE07600010D91 /* PretendBasket.swift */; };
 		26446FA72A6A7C8500395150 /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */; };
-		26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */; };
-		266EA7252A56CDC1005F808D /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */; };
-		2672FECC2A49C22900D59745 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECB2A49C22900D59745 /* MealViewController.swift */; };
 		2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
 		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
-		26E431DB2A543992002A9DAE /* ItemSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */; };
-		BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
 		BF85058228578EF800651864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF85058028578EF800651864 /* Main.storyboard */; };
@@ -36,24 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26311D532A432F05005511D3 /* ReplaceMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceMealViewController.swift; sourceTree = "<group>"; };
-		26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPreviewViewController.swift; sourceTree = "<group>"; };
-		26311D572A434233005511D3 /* RecapPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapPurchaseViewController.swift; sourceTree = "<group>"; };
 		264256832B5ED7DF00010D91 /* MealzViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealzViewConfig.swift; sourceTree = "<group>"; };
 		2642568E2B5EE07600010D91 /* MiamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiamManager.swift; sourceTree = "<group>"; };
 		2642568F2B5EE07600010D91 /* DemoBasketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBasketService.swift; sourceTree = "<group>"; };
 		264256912B5EE07600010D91 /* PretendBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendBasketViewController.swift; sourceTree = "<group>"; };
 		264256922B5EE07600010D91 /* PretendProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendProduct.swift; sourceTree = "<group>"; };
 		264256932B5EE07600010D91 /* PretendBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendBasket.swift; sourceTree = "<group>"; };
-		26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerViewController.swift; sourceTree = "<group>"; };
-		266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
-		2672FECB2A49C22900D59745 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardHostingTableViewCell.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectorViewController.swift; sourceTree = "<group>"; };
-		BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerFormViewController.swift; sourceTree = "<group>"; };
-		BF85057728578EF800651864 /* SampleUIKitIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUIKitIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF85057728578EF800651864 /* CoursesUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF85057C28578EF800651864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF85058128578EF800651864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,7 +100,7 @@
 			children = (
 				26BE7E702A5C1C4B00F5F6FE /* Packages */,
 				26BE7E6E2A5C05C200F5F6FE /* .gitignore */,
-				BF85057928578EF800651864 /* SampleUIKitIntegration */,
+				BF85057928578EF800651864 /* CoursesUDemo */,
 				BF85057828578EF800651864 /* Products */,
 				1AE3A23B7AB6AC351670F417 /* Frameworks */,
 			);
@@ -125,12 +109,12 @@
 		BF85057828578EF800651864 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF85057728578EF800651864 /* SampleUIKitIntegration.app */,
+				BF85057728578EF800651864 /* CoursesUDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF85057928578EF800651864 /* SampleUIKitIntegration */ = {
+		BF85057928578EF800651864 /* CoursesUDemo */ = {
 			isa = PBXGroup;
 			children = (
 				2642568D2B5EE07600010D91 /* MiamInit */,
@@ -140,27 +124,19 @@
 				BF85058328578EFA00651864 /* Assets.xcassets */,
 				BF85058528578EFA00651864 /* LaunchScreen.storyboard */,
 				BF85058828578EFA00651864 /* Info.plist */,
-				BF1A8020287D913400F8FF9A /* MealPlannerFormViewController.swift */,
-				26552BC52A42F2A000238AC3 /* MealPlannerViewController.swift */,
-				26311D532A432F05005511D3 /* ReplaceMealViewController.swift */,
-				26311D552A433A8D005511D3 /* BasketPreviewViewController.swift */,
-				26311D572A434233005511D3 /* RecapPurchaseViewController.swift */,
-				2672FECB2A49C22900D59745 /* MealViewController.swift */,
 				2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */,
 				2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */,
-				26E431DA2A543992002A9DAE /* ItemSelectorViewController.swift */,
-				266EA7242A56CDC1005F808D /* RecipeDetailsViewController.swift */,
 				264256832B5ED7DF00010D91 /* MealzViewConfig.swift */,
 			);
-			path = SampleUIKitIntegration;
+			path = CoursesUDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF85057628578EF800651864 /* SampleUIKitIntegration */ = {
+		BF85057628578EF800651864 /* CoursesUDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF85058B28578EFA00651864 /* Build configuration list for PBXNativeTarget "SampleUIKitIntegration" */;
+			buildConfigurationList = BF85058B28578EFA00651864 /* Build configuration list for PBXNativeTarget "CoursesUDemo" */;
 			buildPhases = (
 				BF85057328578EF800651864 /* Sources */,
 				BF85057428578EF800651864 /* Frameworks */,
@@ -170,7 +146,7 @@
 			);
 			dependencies = (
 			);
-			name = SampleUIKitIntegration;
+			name = CoursesUDemo;
 			packageProductDependencies = (
 				26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */,
 				264256812B5ED70A00010D91 /* CoursesUxMiamFramework */,
@@ -178,7 +154,7 @@
 				264256892B5ED83200010D91 /* MealzNavModuleIOS */,
 			);
 			productName = SampleUIKitIntegration;
-			productReference = BF85057728578EF800651864 /* SampleUIKitIntegration.app */;
+			productReference = BF85057728578EF800651864 /* CoursesUDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BF85057228578EF800651864 /* Build configuration list for PBXProject "SampleUIKitIntegration" */;
+			buildConfigurationList = BF85057228578EF800651864 /* Build configuration list for PBXProject "CoursesUDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF85057628578EF800651864 /* SampleUIKitIntegration */,
+				BF85057628578EF800651864 /* CoursesUDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -244,18 +220,10 @@
 				264256972B5EE08400010D91 /* PretendProduct.swift in Sources */,
 				264256982B5EE08400010D91 /* PretendBasket.swift in Sources */,
 				2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */,
-				26311D562A433A8D005511D3 /* BasketPreviewViewController.swift in Sources */,
-				26552BC62A42F2A000238AC3 /* MealPlannerViewController.swift in Sources */,
-				26E431DB2A543992002A9DAE /* ItemSelectorViewController.swift in Sources */,
-				BF1A8021287D913400F8FF9A /* MealPlannerFormViewController.swift in Sources */,
-				26311D582A434233005511D3 /* RecapPurchaseViewController.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
 				2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */,
-				26311D542A432F05005511D3 /* ReplaceMealViewController.swift in Sources */,
 				264256842B5ED7DF00010D91 /* MealzViewConfig.swift in Sources */,
-				266EA7252A56CDC1005F808D /* RecipeDetailsViewController.swift in Sources */,
 				BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */,
-				2672FECC2A49C22900D59745 /* MealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +368,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
+				INFOPLIST_FILE = CoursesUDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -415,9 +384,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = Miam.SampleUIKitIntegration;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = Miam.CoursesUDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -429,11 +399,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SampleUIKitIntegration/Info.plist;
+				INFOPLIST_FILE = CoursesUDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -444,9 +415,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = Miam.SampleUIKitIntegration;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = Miam.CoursesUDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -456,7 +428,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF85057228578EF800651864 /* Build configuration list for PBXProject "SampleUIKitIntegration" */ = {
+		BF85057228578EF800651864 /* Build configuration list for PBXProject "CoursesUDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF85058928578EFA00651864 /* Debug */,
@@ -465,7 +437,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF85058B28578EFA00651864 /* Build configuration list for PBXNativeTarget "SampleUIKitIntegration" */ = {
+		BF85058B28578EFA00651864 /* Build configuration list for PBXNativeTarget "CoursesUDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF85058C28578EFA00651864 /* Debug */,

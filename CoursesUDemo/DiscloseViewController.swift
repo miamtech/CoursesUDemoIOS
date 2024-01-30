@@ -14,6 +14,8 @@ import MealzNavModuleIOS
 class DiscloseViewController: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
     
+    var rootCoordinator: MealPlannerFeatureNavCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +40,8 @@ class DiscloseViewController: UIViewController {
                     recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
                     mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig)
                 
-                coordinator.showMealPlannerForm()
+                strongSelf.rootCoordinator = coordinator
+                strongSelf.rootCoordinator?.showMealPlannerForm()
             }
             print("CoursesUMealPlannerCallToAction tapped!")
 //                self?.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
