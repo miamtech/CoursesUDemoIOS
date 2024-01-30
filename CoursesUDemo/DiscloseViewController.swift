@@ -34,8 +34,7 @@ class DiscloseViewController: UIViewController {
             if let controller = strongSelf.navigationController {
                 let coordinator = MealPlannerFeatureNavCoordinator(
                     baseConstructor: MealzBaseNavCoordinator.Constructor(
-                        navigationController: controller,
-                        baseViews: MealzViewConfig.baseViews
+                        navigationController: controller
                     ),
                     recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
                     mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig)
