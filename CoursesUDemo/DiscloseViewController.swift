@@ -9,9 +9,12 @@ import UIKit
 import MiamIOSFramework
 import CoursesUxMiamFramework
 import SwiftUI
+import MealzNavModuleIOS
 
 class DiscloseViewController: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
+    
+    var rootCoordinator: MealPlannerFeatureNavCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +29,24 @@ class DiscloseViewController: UIViewController {
 
         // Your SwiftUI Button
         let coursesUMealPlannerCallToAction = CoursesUMealPlannerCallToAction()
-        let coursesUMealPlannerCallToActionView = coursesUMealPlannerCallToAction.content { [weak self] in
-            print("CoursesUMealPlannerCallToAction tapped!")
-            DispatchQueue.main.async {
-                self?.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
+        let coursesUMealPlannerCallToActionView = coursesUMealPlannerCallToAction.content(params: MealPlannerCTAViewParameters() { [weak self] in
+            guard let strongSelf = self else { return }
+            if let controller = strongSelf.navigationController {
+                let coordinator = MealPlannerFeatureNavCoordinator(
+                    baseConstructor: MealzBaseNavCoordinator.Constructor(
+                        navigationController: controller,
+                        baseViews: MealzViewConfig.baseViews
+                    ),
+                    recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+                    mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig)
+                
+                strongSelf.rootCoordinator = coordinator
+                strongSelf.rootCoordinator?.showMealPlannerForm()
             }
-        }
+            print("CoursesUMealPlannerCallToAction tapped!")
+//                self?.navigationController?.pushViewController(MealPlannerFormViewController(), animated: true)
+            })
+        
         
         // Create a UIHostingController with coursesUMealPlannerCallToActionView
         let hostingController = UIHostingController(rootView: coursesUMealPlannerCallToActionView)
@@ -52,4 +67,3 @@ class DiscloseViewController: UIViewController {
     }
 
 }
-

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SampleUIKitIntegration.xcodeproj">
+      location = "group:/Users/diarmuidmcgonagle/sources/mealz/CoursesUDemo/CoursesUDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -16,16 +16,8 @@ import FirebaseCore
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        LogHandler.companion.info("Are you ready ? \(ContextHandlerInstance.shared.instance.isReady())")
-        BasketHandlerInstance.shared.instance.setListenToRetailerBasket(func: {})
-        BasketHandlerInstance.shared.instance.setPushProductsToRetailerBasket(func: {_ in})
-        BasketHandlerInstance.shared.instance.pushProductsToMiamBasket(retailerBasket: [])
-        PointOfSaleHandler.shared.updateStoreId(storeId: "25910")
-        PointOfSaleHandler.shared.setSupplierOrigin(origin:"app.coursesu.com")
-        PointOfSaleHandler.shared.setSupplier(supplierId: 7)
-        UserHandler.shared.updateUserId(userId: "test_\(UUID())")
-        BasketHandlerInstance.shared.instance.clear()
-
+        // moved all the Miam Init logic to another file, MiamManager
+       _ = MiamManager.sharedInstance
         FirebaseApp.configure()
 
         return true
