@@ -42,6 +42,9 @@ struct MealzViewConfig {
         recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard()),
         recipeCardLoading: TypeSafeRecipeCardLoading(CoursesURecipeCardLoading())
     )
+    static let mealPlannerBasketView = MealPlannerBasketViewOptions(
+        footer: TypeSafeMealPlannerBasketFooter(CoursesUMealPlannerBasketPreviewFooter())
+    )
     static let basketRecipeView = BasketRecipeViewOptions(
         recipeOverview: TypeSafeBasketRecipeOverview(CoursesUMealPlannerBasketPreviewRecipeOverview()),
         recipeOverviewLoading: TypeSafeRecipeCardLoading(MealzMealPlannerRecipeCardLoading()),
@@ -66,6 +69,7 @@ struct MealzViewConfig {
         mealPlannerFormViewOptions: mealPlannerFormView,
         mealPlannerResultsViewOptions: mealPlannerResultsView,
         mealPlannerRecipePickerViewOptions: mealPlannerReplaceRecipeView,
+        mealPlannerBasketViewOptions: mealPlannerBasketView,
         basketRecipeViewOptions: basketRecipeView,
         mealPlannerRecapViewOptions: mealPlannerRecapView,
         mealPlannerRecipesListGridConfig: mealPlannerRecipesListGridConfig

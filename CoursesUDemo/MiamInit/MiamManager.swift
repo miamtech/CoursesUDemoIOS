@@ -18,7 +18,7 @@ public class MiamManager: ObservableObject {
         //        let supplierKey = "ewoJInN1cHBsaWVyX2lkIjogIjE0IiwKCSJwbGF1c2libGVfZG9tYWluZSI6ICJtaWFtLnRlc3QiLAoJIm1pYW1fb3JpZ2luIjogIm1pYW0iLAoJIm9yaWdpbiI6ICJtaWFtIiwKCSJtaWFtX2Vudmlyb25tZW50IjogIlVBVCIKfQ=="
         let supplierKey = "ewoJInN1cHBsaWVyX2lkIjogIjciLAoJInBsYXVzaWJsZV9kb21haW5lIjogIm1pYW0uY291cnNlc3UuYXBwIiwKCSJtaWFtX29yaWdpbiI6ICJjb3Vyc2VzdSIsCgkib3JpZ2luIjogIm1pYW0uY291cnNlc3UuYXBwIiwKCSJtaWFtX2Vudmlyb25tZW50IjogIlBST0QiCn0="
         
-//        I18nResolver.shared.registerAppBundle(bundle: MealzUIModuleIOS.bundle)
+        I18nResolver.shared.registerAppBundle(bundle: MealzUIModuleIOS.bundle)
         
         let demoBasketService = DemoBasketService(initialBasketList: PretendBasket.shared.items)
         
@@ -64,6 +64,9 @@ public class MiamManager: ObservableObject {
         // show "Sponsored" tag on products that are sponsored
         Mealz.shared.environment.setAllowsSponsoredProducts(isAllowed: true)
         
+        // set how many logs you want:
+        // .errorsAndWarns, .errorsOnly, .allLogs, or .noLogs
+        // default is .errorsAndWarns
         LogHandler.companion.logLevel = .allLogs
     }
 }
