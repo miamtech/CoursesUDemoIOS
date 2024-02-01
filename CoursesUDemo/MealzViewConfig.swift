@@ -22,6 +22,17 @@ struct MealzViewConfig {
         baseViews: recipeDetailsBaseViews
     )
     
+    // -------------------------------- CATALOG ----------------------------------
+    
+    static let catalogConfig = CatalogFeatureConstructor(
+//        catalogViewOptions: catalogView,
+//        recipesListViewOptions: recipesListView,
+//        packageRowViewOptions: catalogPackageView,
+//        catalogSearchViewOptions: catalogSearchView,
+//        catalogViewGridConfig: catalogViewGridConfig,
+//        catalogResultsGridConfig: catalogResultsGridConfig
+    )
+    
     // ------------------------------- MEAL PLANNER ------------------------------
     
     static let mealPlannerBaseViews = BasePageViewParameters(
