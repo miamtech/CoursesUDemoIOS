@@ -18,8 +18,23 @@ struct MealzViewConfig {
     static let recipeDetailsBaseViews = BasePageViewParameters(
         loading: TypeSafeLoading(CoursesULoadingView())
     )
+    static let recipeDetailsViews = RecipeDetailsViewOptions(
+        footer: TypeSafeRecipeDetailsFooter(CoursesURecipeDetailsFooterView())
+    )
     static let recipeDetailsConfig = RecipeDetailsFeatureConstructor(
-        baseViews: recipeDetailsBaseViews
+        baseViews: recipeDetailsBaseViews,
+        recipeDetailsViewOptions: recipeDetailsViews
+    )
+    
+    // -------------------------------- CATALOG ----------------------------------
+    
+    static let catalogConfig = CatalogFeatureConstructor(
+//        catalogViewOptions: catalogView,
+//        recipesListViewOptions: recipesListView,
+//        packageRowViewOptions: catalogPackageView,
+//        catalogSearchViewOptions: catalogSearchView,
+//        catalogViewGridConfig: catalogViewGridConfig,
+//        catalogResultsGridConfig: catalogResultsGridConfig
     )
     
     // ------------------------------- MEAL PLANNER ------------------------------

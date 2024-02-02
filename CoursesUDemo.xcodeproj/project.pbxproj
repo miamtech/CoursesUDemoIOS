@@ -17,8 +17,10 @@
 		264256972B5EE08400010D91 /* PretendProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264256922B5EE07600010D91 /* PretendProduct.swift */; };
 		264256982B5EE08400010D91 /* PretendBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264256932B5EE07600010D91 /* PretendBasket.swift */; };
 		26446FA72A6A7C8500395150 /* CoursesUxMiamFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */; };
+		264B06862B6A8ED8001D219D /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 264B06852B6A8ED8001D219D /* FirebaseAppDistribution-Beta */; };
 		2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
+		26B2A4072B6BE366008D8EBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26B2A4062B6BE366008D8EBF /* GoogleService-Info.plist */; };
 		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
@@ -36,6 +38,7 @@
 		264256932B5EE07600010D91 /* PretendBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendBasket.swift; sourceTree = "<group>"; };
 		2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardHostingTableViewCell.swift; sourceTree = "<group>"; };
 		2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscloseViewController.swift; sourceTree = "<group>"; };
+		26B2A4062B6BE366008D8EBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* CoursesUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 			files = (
 				2642568A2B5ED83200010D91 /* MealzNavModuleIOS in Frameworks */,
 				26446FA72A6A7C8500395150 /* CoursesUxMiamFramework in Frameworks */,
+				264B06862B6A8ED8001D219D /* FirebaseAppDistribution-Beta in Frameworks */,
 				264256822B5ED70A00010D91 /* CoursesUxMiamFramework in Frameworks */,
 				264256872B5ED82800010D91 /* MealzUIModuleIOS in Frameworks */,
 			);
@@ -98,6 +102,7 @@
 		BF85056E28578EF800651864 = {
 			isa = PBXGroup;
 			children = (
+				26B2A4062B6BE366008D8EBF /* GoogleService-Info.plist */,
 				26BE7E702A5C1C4B00F5F6FE /* Packages */,
 				26BE7E6E2A5C05C200F5F6FE /* .gitignore */,
 				BF85057928578EF800651864 /* CoursesUDemo */,
@@ -152,6 +157,7 @@
 				264256812B5ED70A00010D91 /* CoursesUxMiamFramework */,
 				264256862B5ED82800010D91 /* MealzUIModuleIOS */,
 				264256892B5ED83200010D91 /* MealzNavModuleIOS */,
+				264B06852B6A8ED8001D219D /* FirebaseAppDistribution-Beta */,
 			);
 			productName = SampleUIKitIntegration;
 			productReference = BF85057728578EF800651864 /* CoursesUDemo.app */;
@@ -185,6 +191,7 @@
 				264256802B5ED70A00010D91 /* XCLocalSwiftPackageReference "../coursesU-x-Miam-Framework" */,
 				264256852B5ED82800010D91 /* XCLocalSwiftPackageReference "../MealzUIModuleIOS" */,
 				264256882B5ED83100010D91 /* XCLocalSwiftPackageReference "../MealzNavModuleIOS" */,
+				264B06842B6A8ED8001D219D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = BF85057828578EF800651864 /* Products */;
 			projectDirPath = "";
@@ -200,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B2A4072B6BE366008D8EBF /* GoogleService-Info.plist in Resources */,
 				26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */,
 				BF85058728578EFA00651864 /* LaunchScreen.storyboard in Resources */,
 				BF85058428578EFA00651864 /* Assets.xcassets in Resources */,
@@ -370,7 +378,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoursesUDemo/Info.plist;
@@ -379,12 +387,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Miam.CoursesUDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -401,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoursesUDemo/Info.plist;
@@ -410,12 +418,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Miam.CoursesUDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -463,6 +471,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		264B06842B6A8ED8001D219D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		264256812B5ED70A00010D91 /* CoursesUxMiamFramework */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -479,6 +498,11 @@
 		26446FA62A6A7C8500395150 /* CoursesUxMiamFramework */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoursesUxMiamFramework;
+		};
+		264B06852B6A8ED8001D219D /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 264B06842B6A8ED8001D219D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
