@@ -1,0 +1,21 @@
+
+/* Class = "UITableViewController"; title = "Recipes"; ObjectID = "25i-HP-Nao"; */
+"25i-HP-Nao.title" = "Recipes";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "85t-5d-tvv"; */
+"85t-5d-tvv.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "Navigate"; ObjectID = "CHj-sV-yZB"; */
+"CHj-sV-yZB.configuration.title" = "Navigate";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CHj-sV-yZB"; */
+"CHj-sV-yZB.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = "Recipe suggestion"; ObjectID = "GFT-kg-Axc"; */
+"GFT-kg-Axc.title" = "Recipe suggestion";
+
+/* Class = "UITabBarItem"; title = "Profil"; ObjectID = "VGg-hq-7cz"; */
+"VGg-hq-7cz.title" = "Profil";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "pR4-ux-lhF"; */
+"pR4-ux-lhF.title" = "Item";
