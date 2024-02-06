@@ -50,10 +50,12 @@ struct MealzViewConfig {
         toolbar: TypeSafeMealPlannerResultsToolbar(CoursesUMealPlannerToolbar()),
         footer: TypeSafeMealPlannerResultsFooter(CoursesUMealPlannerFooter()),
         recipeCard: TypeSafeMealPlannerRecipeCard(CoursesUMealPlannerRecipeCard()),
-        recipeCardLoading: TypeSafeRecipeCardLoading(CoursesUMealPlannerRecipeCardLoading())
+        recipeCardLoading: TypeSafeRecipeCardLoading(CoursesUMealPlannerRecipeCardLoading()),
+        placeholder: TypeSafeMealPlannerRecipePlaceholder(CoursesUMealPlannerRecipePlaceholder())
     )
     static let mealPlannerReplaceRecipeView = MealPlannerRecipePickerViewOptions(
         search: TypeSafeSearch(CoursesUMealPlannerSearch()),
+        noResults: TypeSafeCatalogRecipesListNoResults(CoursesUMealPlannerRecipePickerNoResults()),
         recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard()),
         recipeCardLoading: TypeSafeRecipeCardLoading(CoursesURecipeCardLoading())
     )
