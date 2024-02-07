@@ -20,8 +20,6 @@ class PretendBasketViewController: UIViewController, UITableViewDelegate,       
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = NSLocalizedString("tab_basket", comment: "")
         tableView.allowsSelection = false // disable selection
         
         PretendBasket.shared.$items
