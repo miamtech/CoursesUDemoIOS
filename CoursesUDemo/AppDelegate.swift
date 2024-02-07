@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // moved all the Miam Init logic to another file, MiamManager
         _ = MiamManager.sharedInstance
-    
+//        Dimension.sharedInstance.mCornerRadius = 1000
         return true
     }
 

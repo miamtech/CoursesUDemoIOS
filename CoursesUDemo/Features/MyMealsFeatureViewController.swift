@@ -17,7 +17,10 @@ class MyMealsFeatureViewController: UINavigationController {
         let coordinator = MyMealsFeatureNavCoordinator(
             baseConstructor: MealzBaseNavCoordinator.Constructor(
                 navigationController: self
-            ), myMealsContructor: MyMealsFeatureConstructor(navigateToCatalog: {}))
+            ), 
+            recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+            myMealsContructor: MealzViewConfig.myMealsConfig
+        )
         
         self.rootCoordinator = coordinator
         self.rootCoordinator?.showMyMeals()

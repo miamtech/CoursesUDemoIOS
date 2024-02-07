@@ -28,13 +28,55 @@ struct MealzViewConfig {
     
     // -------------------------------- CATALOG ----------------------------------
     
+    static let catalogView = CatalogViewOptions(
+        catalogToolbar: TypeSafeCatalogToolbar(CoursesUCatalogToolbar()),
+        resultsToolbar: TypeSafeCatalogToolbar(CoursesUCatalogResultsToolbar())
+    )
+    
+    static let catalogPackageView = CatalogPackageRowViewOptions(
+        callToAction: TypeSafeCatalogPackageCTA(CoursesUCatalogPackageCTA())
+//        ,recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+    )
+    
+    static let recipesListView = CatalogRecipesListViewOptions(
+//        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+    )
+    
     static let catalogConfig = CatalogFeatureConstructor(
-//        catalogViewOptions: catalogView,
-//        recipesListViewOptions: recipesListView,
-//        packageRowViewOptions: catalogPackageView,
+        usesPreferences: false,
+        catalogViewOptions: catalogView,
+        recipesListViewOptions: recipesListView,
+        packageRowViewOptions: catalogPackageView
 //        catalogSearchViewOptions: catalogSearchView,
 //        catalogViewGridConfig: catalogViewGridConfig,
 //        catalogResultsGridConfig: catalogResultsGridConfig
+    )
+    
+    // -------------------------------- FAVORITES ----------------------------------
+    
+    /* pass in your nav to the catalog here! */
+    static let showCatalog = {}
+    
+    static let favoritesView = FavoritesViewOptions(
+//        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+    )
+    
+    static let favoritesConfig = FavoritesFeatureConstructor(
+        favoritesViewOptions: favoritesView,
+        navigateToCatalog: showCatalog
+    )
+    
+    // ---------------------------------- MY MEALS ----------------------------------
+    
+    static let myMealsView = MyMealsViewOptions(
+//        recipeCard: TypeSafeMyMealRecipeCard(CoursesUMyMealRecipeCard()),
+//        recipeCardLoading: TypeSafeRecipeCardLoading(FranprixRecipeCardLoading())
+    )
+    
+    static let myMealsConfig = MyMealsFeatureConstructor(
+        myMealsViewOptions: myMealsView,
+//        catalogRecipesListGridConfig: myMealsGridConfig,
+        navigateToCatalog: showCatalog
     )
     
     // ------------------------------- MEAL PLANNER ------------------------------
@@ -56,8 +98,7 @@ struct MealzViewConfig {
     static let mealPlannerReplaceRecipeView = MealPlannerRecipePickerViewOptions(
         search: TypeSafeSearch(CoursesUMealPlannerSearch()),
         noResults: TypeSafeCatalogRecipesListNoResults(CoursesUMealPlannerRecipePickerNoResults()),
-        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard()),
-        recipeCardLoading: TypeSafeRecipeCardLoading(CoursesURecipeCardLoading())
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipePickerRecipeCard())
     )
     static let mealPlannerBasketView = MealPlannerBasketViewOptions(
         footer: TypeSafeMealPlannerBasketFooter(CoursesUMealPlannerBasketPreviewFooter())

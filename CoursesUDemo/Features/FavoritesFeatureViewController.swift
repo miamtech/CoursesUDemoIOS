@@ -17,9 +17,10 @@ class FavoritesFeatureViewController: UINavigationController {
         let coordinator = FavoritesFeatureNavCoordinator(
             baseConstructor: MealzBaseNavCoordinator.Constructor(
                 navigationController: self
-            ), favoritesFeatureConstructor: FavoritesFeatureConstructor(navigateToCatalog: {
-                // nav to catalog feature
-            }))
+            ), 
+            recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+            favoritesFeatureConstructor: MealzViewConfig.favoritesConfig
+        )
         
         self.rootCoordinator = coordinator
         self.rootCoordinator?.showFavorites()
