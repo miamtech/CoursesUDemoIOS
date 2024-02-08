@@ -21,6 +21,10 @@
 		2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FECF2A49C51000D59745 /* RecipeCardHostingTableViewCell.swift */; };
 		2672FEE22A4C3EAB00D59745 /* DiscloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672FEE12A4C3EAB00D59745 /* DiscloseViewController.swift */; };
 		26B2A4072B6BE366008D8EBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26B2A4062B6BE366008D8EBF /* GoogleService-Info.plist */; };
+		26B2A40D2B738773008D8EBF /* CatalogFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2A40C2B738773008D8EBF /* CatalogFeatureViewController.swift */; };
+		26B2A4102B738B1C008D8EBF /* FavoritesFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2A40F2B738B1C008D8EBF /* FavoritesFeatureViewController.swift */; };
+		26B2A4122B738B5C008D8EBF /* MyMealsFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2A4112B738B5C008D8EBF /* MyMealsFeatureViewController.swift */; };
+		26B2A4142B73AD6A008D8EBF /* MealPlannerFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2A4132B73AD6A008D8EBF /* MealPlannerFeatureViewController.swift */; };
 		26BE7E6F2A5C05C300F5F6FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 26BE7E6E2A5C05C200F5F6FE /* .gitignore */; };
 		BF85057B28578EF800651864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057A28578EF800651864 /* AppDelegate.swift */; };
 		BF85057D28578EF800651864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85057C28578EF800651864 /* SceneDelegate.swift */; };
@@ -41,6 +45,10 @@
 		26B2A4062B6BE366008D8EBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26B2A40A2B72741D008D8EBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		26B2A40B2B72741D008D8EBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		26B2A40C2B738773008D8EBF /* CatalogFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogFeatureViewController.swift; sourceTree = "<group>"; };
+		26B2A40F2B738B1C008D8EBF /* FavoritesFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFeatureViewController.swift; sourceTree = "<group>"; };
+		26B2A4112B738B5C008D8EBF /* MyMealsFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMealsFeatureViewController.swift; sourceTree = "<group>"; };
+		26B2A4132B73AD6A008D8EBF /* MealPlannerFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerFeatureViewController.swift; sourceTree = "<group>"; };
 		26BE7E6E2A5C05C200F5F6FE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BF85057728578EF800651864 /* CoursesUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF85057A28578EF800651864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,17 @@
 			path = PretendBasket;
 			sourceTree = "<group>";
 		};
+		26B2A40E2B738B02008D8EBF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				26B2A40C2B738773008D8EBF /* CatalogFeatureViewController.swift */,
+				26B2A40F2B738B1C008D8EBF /* FavoritesFeatureViewController.swift */,
+				26B2A4112B738B5C008D8EBF /* MyMealsFeatureViewController.swift */,
+				26B2A4132B73AD6A008D8EBF /* MealPlannerFeatureViewController.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		26BE7E702A5C1C4B00F5F6FE /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +143,7 @@
 		BF85057928578EF800651864 /* CoursesUDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26B2A40E2B738B02008D8EBF /* Features */,
 				2642568D2B5EE07600010D91 /* MiamInit */,
 				BF85057A28578EF800651864 /* AppDelegate.swift */,
 				BF85057C28578EF800651864 /* SceneDelegate.swift */,
@@ -226,9 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				264256942B5EE08400010D91 /* MiamManager.swift in Sources */,
+				26B2A4122B738B5C008D8EBF /* MyMealsFeatureViewController.swift in Sources */,
+				26B2A4102B738B1C008D8EBF /* FavoritesFeatureViewController.swift in Sources */,
+				26B2A40D2B738773008D8EBF /* CatalogFeatureViewController.swift in Sources */,
 				264256952B5EE08400010D91 /* DemoBasketService.swift in Sources */,
 				264256962B5EE08400010D91 /* PretendBasketViewController.swift in Sources */,
 				264256972B5EE08400010D91 /* PretendProduct.swift in Sources */,
+				26B2A4142B73AD6A008D8EBF /* MealPlannerFeatureViewController.swift in Sources */,
 				264256982B5EE08400010D91 /* PretendBasket.swift in Sources */,
 				2672FED02A49C51000D59745 /* RecipeCardHostingTableViewCell.swift in Sources */,
 				BF85057B28578EF800651864 /* AppDelegate.swift in Sources */,
@@ -385,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoursesUDemo/Info.plist;
@@ -416,7 +440,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = VLHN7Y8965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoursesUDemo/Info.plist;

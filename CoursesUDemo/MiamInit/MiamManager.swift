@@ -69,5 +69,7 @@ public class MiamManager: ObservableObject {
         // .errorsAndWarns, .errorsOnly, .allLogs, or .noLogs
         // default is .errorsAndWarns
         LogHandler.companion.logLevel = .allLogs
+        
+        configDimensions()
     }
 }
