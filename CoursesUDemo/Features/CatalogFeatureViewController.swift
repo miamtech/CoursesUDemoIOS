@@ -7,6 +7,7 @@
 
 import UIKit
 import MealzNavModuleIOS
+import MiamIOSFramework
 
 class CatalogFeatureViewController: UINavigationController {
     
@@ -14,11 +15,14 @@ class CatalogFeatureViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
             let coordinator = CatalogFeatureNavCoordinator(
                 baseConstructor: MealzBaseNavCoordinator.Constructor(
                     navigationController: self
-                ))
+                ),
+                recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+                catalogFeatureConstructor: MealzViewConfig.catalogConfig,
+                myMealsViewOptions: MealzViewConfig.myMealsView
+            )
             
             self.rootCoordinator = coordinator
             self.rootCoordinator?.showCatalog()
