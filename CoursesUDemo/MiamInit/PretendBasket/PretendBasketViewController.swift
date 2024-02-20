@@ -73,9 +73,10 @@ class PretendBasketViewController: UIViewController, UITableViewDelegate,       
         
         DispatchQueue.global().async {
             if let url = url {
-                let data = try? Data(contentsOf: url)
-                DispatchQueue.main.async {
-                    cell.cellImageView.image = UIImage(data: data!)
+                if let data = try? Data(contentsOf: url) {
+                    DispatchQueue.main.async {
+                        cell.cellImageView.image = UIImage(data: data)
+                    }
                 }
             }
         }

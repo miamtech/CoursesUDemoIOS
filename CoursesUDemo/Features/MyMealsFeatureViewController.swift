@@ -8,35 +8,27 @@
 import UIKit
 import MealzNavModuleIOS
 
-class MyMealsFeatureViewController: UINavigationController {
-
-    var rootCoordinator: MyMealsFeatureNavCoordinator?
+class MyMealsFeatureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let coordinator = MyMealsFeatureNavCoordinator(
-            baseConstructor: MealzBaseNavCoordinator.Constructor(
-                navigationController: self
-            ), 
+        
+        let myMealsFeature = MealzMyMealsFeatureUIKit(
             recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
             myMealsContructor: MealzViewConfig.myMealsConfig
         )
         
-        self.rootCoordinator = coordinator
-        self.rootCoordinator?.showMyMeals()
-        
-        // Do any additional setup after loading the view.
+        // Add the custom navigation controller as a child view controller
+        addChild(myMealsFeature)
+        myMealsFeature.view.frame = self.view.bounds
+        view.addSubview(myMealsFeature.view)
+        myMealsFeature.didMove(toParent: self)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+// i only use above because i want to use Storyboard
+//let myMealsFeature = MealzMyMealsFeatureUIKit(
+//    recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+//    myMealsContructor: MealzViewConfig.myMealsConfig
+//)

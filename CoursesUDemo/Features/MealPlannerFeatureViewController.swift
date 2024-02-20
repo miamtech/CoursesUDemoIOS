@@ -8,34 +8,27 @@
 import UIKit
 import MealzNavModuleIOS
 
-class MealPlannerFeatureViewController: UINavigationController {
-
-    var rootCoordinator: MealPlannerFeatureNavCoordinator?
-
+class MealPlannerFeatureViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let coordinator = MealPlannerFeatureNavCoordinator(
-            baseConstructor: MealzBaseNavCoordinator.Constructor(
-                navigationController: self
-            ),
+        let mealPlannerFeature = MealzMealPlannerFeatureUIKit(
             recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
-            mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig)
+            mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig
+        )
         
-        self.rootCoordinator = coordinator
-        self.rootCoordinator?.showMealPlannerForm()
-        
-        // Do any additional setup after loading the view.
+        // Add the custom navigation controller as a child view controller
+        addChild(mealPlannerFeature)
+        mealPlannerFeature.view.frame = self.view.bounds
+        view.addSubview(mealPlannerFeature.view)
+        mealPlannerFeature.didMove(toParent: self)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+// i only use above because i want to use Storyboard
+//let mealPlannerFeature = MealzMealPlannerFeatureUIKit(
+//    recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+//    mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig
+//)
