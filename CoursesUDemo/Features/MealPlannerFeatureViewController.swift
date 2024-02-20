@@ -14,7 +14,7 @@ class MealPlannerFeatureViewController: UIViewController {
         super.viewDidLoad()
         
         let mealPlannerFeature = MealzMealPlannerFeatureUIKit(
-            recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+            recipeDetailsConstructor: MealzViewConfig.mealPlannerRecipeDetailsConfig,
             mealPlannerFeatureConstructor: MealzViewConfig.mealPlannerConfig
         )
         

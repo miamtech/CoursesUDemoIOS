@@ -34,12 +34,12 @@ struct MealzViewConfig {
     )
     
     static let catalogPackageView = CatalogPackageRowViewOptions(
-        callToAction: TypeSafeCatalogPackageCTA(CoursesUCatalogPackageCTA())
-//        ,recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+        callToAction: TypeSafeCatalogPackageCTA(CoursesUCatalogPackageCTA()),
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
     )
     
     static let recipesListView = CatalogRecipesListViewOptions(
-//        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
     )
     
     static let catalogConfig = CatalogFeatureConstructor(
@@ -58,7 +58,7 @@ struct MealzViewConfig {
     static let showCatalog = {}
     
     static let favoritesView = FavoritesViewOptions(
-//        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
     )
     
     static let favoritesConfig = FavoritesFeatureConstructor(
@@ -69,8 +69,7 @@ struct MealzViewConfig {
     // ---------------------------------- MY MEALS ----------------------------------
     
     static let myMealsView = MyMealsViewOptions(
-//        recipeCard: TypeSafeMyMealRecipeCard(CoursesUMyMealRecipeCard()),
-//        recipeCardLoading: TypeSafeRecipeCardLoading(FranprixRecipeCardLoading())
+//        recipeCard: TypeSafeMyMealRecipeCard(CoursesUMyMealRecipeCard())
     )
     
     static let myMealsConfig = MyMealsFeatureConstructor(
@@ -131,5 +130,14 @@ struct MealzViewConfig {
         basketRecipeViewOptions: basketRecipeView,
         mealPlannerRecapViewOptions: mealPlannerRecapView,
         mealPlannerRecipesListGridConfig: mealPlannerRecipesListGridConfig
+    )
+    
+    // ------ Meal Planner Recipe Details --------
+    static let mealPlannerRecipeDetailsViews = RecipeDetailsViewOptions(
+        footer: TypeSafeRecipeDetailsFooter(CoursesUMealPlannerRecipeDetailsFooterView())
+    )
+    
+    static let mealPlannerRecipeDetailsConfig = RecipeDetailsFeatureConstructor(
+        recipeDetailsViewOptions: mealPlannerRecipeDetailsViews
     )
 }
