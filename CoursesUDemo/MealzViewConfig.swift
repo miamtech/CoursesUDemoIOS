@@ -19,36 +19,47 @@ struct MealzViewConfig {
         loading: TypeSafeLoading(CoursesULoadingView())
     )
     static let recipeDetailsViews = RecipeDetailsViewOptions(
+        header: TypeSafeRecipeDetailsHeader(CoursesURecipeDetailsHeaderView()),
+        steps: TypeSafeRecipeDetailsSteps(CoursesURecipeDetailsStepsView()),
         footer: TypeSafeRecipeDetailsFooter(CoursesURecipeDetailsFooterView())
+    )
+    static let recipeDetailsProductsViews = RecipeDetailsProductViewOptions(
+        addedProduct: TypeSafeRecipeDetailsAddedProduct(CoursesURecipeDetailsAddedProductView())
     )
     static let recipeDetailsConfig = RecipeDetailsFeatureConstructor(
         baseViews: recipeDetailsBaseViews,
-        recipeDetailsViewOptions: recipeDetailsViews
+        recipeDetailsViewOptions: recipeDetailsViews,
+        recipeDetailsProductViewOptions: recipeDetailsProductsViews
     )
     
     // -------------------------------- CATALOG ----------------------------------
     
     static let catalogView = CatalogViewOptions(
         catalogToolbar: TypeSafeCatalogToolbar(CoursesUCatalogToolbar()),
-        resultsToolbar: TypeSafeCatalogToolbar(CoursesUCatalogResultsToolbar())
+        resultsToolbar: TypeSafeCatalogToolbar(CoursesUCatalogResultsToolbar()),
+        mealsInBasketButtonSuccess: TypeSafeMealsInBasketButtonSuccess(CoursesUMealsInBasketButtonSuccess())
     )
     
     static let catalogPackageView = CatalogPackageRowViewOptions(
         callToAction: TypeSafeCatalogPackageCTA(CoursesUCatalogPackageCTA()),
-        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard(showYellowBanner: true))
     )
     
     static let recipesListView = CatalogRecipesListViewOptions(
-        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard())
+        recipeCard: TypeSafeCatalogRecipeCard(CoursesURecipeCard(showingOnCatalogResults: true))
+    )
+    
+    static let catalogViewGridConfig = CatalogRecipesListGridConfig(
+        recipeCardFillMaxWidth: false
     )
     
     static let catalogConfig = CatalogFeatureConstructor(
         usesPreferences: false,
         catalogViewOptions: catalogView,
         recipesListViewOptions: recipesListView,
-        packageRowViewOptions: catalogPackageView
+        packageRowViewOptions: catalogPackageView,
 //        catalogSearchViewOptions: catalogSearchView,
-//        catalogViewGridConfig: catalogViewGridConfig,
+        catalogViewGridConfig: catalogViewGridConfig
 //        catalogResultsGridConfig: catalogResultsGridConfig
     )
     
@@ -69,7 +80,8 @@ struct MealzViewConfig {
     // ---------------------------------- MY MEALS ----------------------------------
     
     static let myMealsView = MyMealsViewOptions(
-//        recipeCard: TypeSafeMyMealRecipeCard(CoursesUMyMealRecipeCard())
+        title: TypeSafeBaseTitle(CoursesUMyMealsTitle()),
+        recipeCard: TypeSafeMyMealRecipeCard(CoursesUMyMealRecipeCard())
     )
     
     static let myMealsConfig = MyMealsFeatureConstructor(
@@ -134,10 +146,13 @@ struct MealzViewConfig {
     
     // ------ Meal Planner Recipe Details --------
     static let mealPlannerRecipeDetailsViews = RecipeDetailsViewOptions(
+        header: TypeSafeRecipeDetailsHeader(CoursesURecipeDetailsHeaderView()),
+        steps: TypeSafeRecipeDetailsSteps(CoursesURecipeDetailsStepsView()),
         footer: TypeSafeRecipeDetailsFooter(CoursesUMealPlannerRecipeDetailsFooterView())
     )
     
     static let mealPlannerRecipeDetailsConfig = RecipeDetailsFeatureConstructor(
-        recipeDetailsViewOptions: mealPlannerRecipeDetailsViews
+        recipeDetailsViewOptions: mealPlannerRecipeDetailsViews,
+        recipeDetailsProductViewOptions: recipeDetailsProductsViews
     )
 }
