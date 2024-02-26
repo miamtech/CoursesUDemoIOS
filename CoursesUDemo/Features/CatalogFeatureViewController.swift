@@ -9,36 +9,29 @@ import UIKit
 import MealzNavModuleIOS
 import MiamIOSFramework
 
-class CatalogFeatureViewController: UINavigationController {
+class CatalogFeatureViewController: UIViewController {
     
-    var rootCoordinator: CatalogFeatureNavCoordinator?
-
     override func viewDidLoad() {
         super.viewDidLoad()
-            let coordinator = CatalogFeatureNavCoordinator(
-                baseConstructor: MealzBaseNavCoordinator.Constructor(
-                    navigationController: self
-                ),
-                recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
-                catalogFeatureConstructor: MealzViewConfig.catalogConfig,
-                myMealsViewOptions: MealzViewConfig.myMealsView
-            )
-            
-            self.rootCoordinator = coordinator
-            self.rootCoordinator?.showCatalog()
         
-        // Do any additional setup after loading the view.
+        let catalogFeature = MealzCatalogFeatureUIKit(
+            recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+            catalogFeatureConstructor: MealzViewConfig.catalogConfig,
+            myMealsViewOptions: MealzViewConfig.myMealsView
+        )
+        
+        // Add the custom navigation controller as a child view controller
+        addChild(catalogFeature)
+        catalogFeature.view.frame = self.view.bounds
+        view.addSubview(catalogFeature.view)
+        catalogFeature.didMove(toParent: self)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+// i only use above because i want to use Storyboard
+//let catalogFeature = MealzCatalogFeatureUIKit(
+//    recipeDetailsConstructor: MealzViewConfig.recipeDetailsConfig,
+//    catalogFeatureConstructor: MealzViewConfig.catalogConfig,
+//    myMealsViewOptions: MealzViewConfig.myMealsView
+//)
